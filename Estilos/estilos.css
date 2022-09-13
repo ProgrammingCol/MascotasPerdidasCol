@@ -1,0 +1,113 @@
+
+ .navbar {
+    background: #000000
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: turquoise;
+    transition: 0.4s
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: turquoise
+}
+
+.nav-link {
+    padding: 25px 5px;
+    transition: 0.2s
+}
+
+body{
+    background-color:white;
+}
+
+#formulario {
+    text-align: rigth;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 0.5%;
+    max-width:1000px ;
+    max-block-size: 20000px;
+    background-color: #eee;;
+    }
+
+
+#boton {
+    position: relative;
+	display: block;
+	border-radius: 6px;
+	text-align: center;
+    font-size: 16px;
+	width: 150px;
+	height: 50px;
+	color: white;
+	cursor: pointer;
+	letter-spacing: 2px;
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background:black;
+    width: 150px;
+    border: none;
+    margin-top:15px;
+    }
+
+    #boton:after,
+    #boton:before{
+        width: 150px;
+        height: 50px;
+        content: rgb(14, 12, 12);
+        display: block;
+        cursor: pointer;
+    }
+     
+    #boton:hover{
+        text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        background:turquoise;
+        
+        width: 150px;   
+    }
+     
+    #boton:hover:after,
+    #boton:hover:before{
+        transform: rotate(45deg), scaleX(130%);
+        transition: all ease 0.5s;
+        width: 150px;
+    }
+     
+    footer {
+        background-color: rgb(18, 17, 17);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0PX;
+        text-align: left;
+        font: bold 16px sans-serif;
+        margin-top: 150px;
+        padding-bottom: 5px;
+        color: rgb(205, 201, 201);
+      }
+
+
+      ul.navega li {
+        display: inline;
+        padding-right: 0.30em;
+        margin-top: 25px;
+      }
+
+     
