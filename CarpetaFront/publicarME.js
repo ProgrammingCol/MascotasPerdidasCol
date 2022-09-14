@@ -1,18 +1,9 @@
 
+const condbase = 0;
 
-const user = "vane"
-const pw = 123456
+function revisar() {
+    let condiciones = document.getElementById("condiciones").value;
 
-function verificar() {
-    let usuario = document.getElementById("usuario").value;
-    let clave = document.getElementById("clave").value;
-    let clave = document.getElementById("clave").value;
-    let clave = document.getElementById("clave").value;
-    let clave = document.getElementById("clave").value;
-    let clave = document.getElementById("clave").value;
-    if (usuario == user && clave == pw) {
-        alert("loggin exitoso")
-    } else {
-        alert("Revise los datos ingresados")
-    }
-}
+    if (condiciones !== condbase) {
+        alert("Revisa que tus datos sean correctos antes de dar click en Enviar");
+    }}
