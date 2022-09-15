@@ -16,72 +16,177 @@
 
     <!--Navbar-->
     <nav class="navbar navbar-nav navbar-expand-sm bg-gradient bg-light text-black p-3 mx-auto"> <button
-        class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="figure-img">
-        <a class="figure-img" href="landingPage.html">
-            <img src="/img/logo.png" alt="" width="50" height="50" class=" align-content-center">
-        </a>
+            class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="figure-img">
+            <a class="figure-img" href="landingPage.html">
+                <img src="/img/logo.png" alt="" width="50" height="50" class=" align-content-center">
+            </a>
+        </div>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="landingPage.html" class="nav-link p-3">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a href="landingPage.html" class="nav-link p-3">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+                <a href="landingPage.html" class="nav-link p-3">Donaciones</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Mascotas Perdidas
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mascotasPerdidas.html">Ver publicaciones</a></li>
+                    <li><a class="dropdown-item" href="publicarMPerdida.html">Crear publicación</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="landingPage.html#">Proceso para publicar</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Mascotas Encontradas
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="mascotas.Encontradas.html">Ver publicaciones</a></li>
+                    <li><a class="dropdown-item" href="publicarMEncontrada.html">Crear publicación</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="landingPage.html#">Proceso para publicar</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Cabecera-->
+    <div class="container-fluid p-4  pb-5 bg-gradient bg-opacity-25 text-black-50 text-center" id="cabecera">
+        <h1 class="mb-3 mt-5" id="textCabecera">MASCOTAS PERDIDAS</h1>
+
     </div>
 
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a href="landingPage.html" class="nav-link p-3">Nosotros</a>
-        </li>
-        <li class="nav-item">
-            <a href="landingPage.html" class="nav-link p-3">Contáctanos</a>
-        </li>
-        <li class="nav-item">
-            <a href="landingPage.html" class="nav-link p-3">Donaciones</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Mascotas Perdidas
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="mascotasPerdidas.html">Ver publicaciones</a></li>
-                <li><a class="dropdown-item" href="publicarMPerdida.html">Crear publicación</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="landingPage.html#">Proceso para publicar</a></li>
-            </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Mascotas Encontradas
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="mascotas.Encontradas.html">Ver publicaciones</a></li>
-                <li><a class="dropdown-item" href="publicarMEncontrada.html">Crear publicación</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="landingPage.html#">Proceso para publicar</a></li>
-            </ul>
-        </li>
-    </ul>
-
-</nav>
-
-<!--Cabecera-->
-<div class="container-fluid p-4  pb-5 bg-gradient bg-opacity-25 text-black-50 text-center" id="cabecera">
-    <h1 class="mb-3 mt-5" id="textCabecera">MASCOTAS PERDIDAS</h1>
-    <p>!Llena el formulario y publica en nuestra red!</p>
-</div>
-    
     <!--Cuerpo-->
     <div>
-        
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <div class="card text-center">
+                        <div class="card-body form-group row g-3 m-4 p-4">
+                            <h4 class="card-title">Filtrar busqueda por:</h4>
+                            <br>
+                            <ul style="list-style-type: none; text-align: left">
+                                <li>
+                                    <label for="especie" class="form-label">Especie</label>
+                                    <select name="especie" id="especie" class="form-select">
+                                        <option selected>Seleccionar</option>
+                                        <option value="1">Perro</option>
+                                        <option value="2">Gato</option>
+                                    </select>
+                                </li> 
+                                <li>
+                                <label for="raza" class="form-label">Raza</label>
+                                <select name="raza" id="raza" class="form-select">
+                                    <option selected>seleccionar</option>
+                                    <option value="1">Labrador</option>
+                                    <option value="2">Alaskan malamute</option>
+                                    <option value="3">Chow chow</option>
+                                    <option value="4">Samolledo</option>
+                                    <option value="5">Pastor ovejero</option>
+                                    <option value="6">Schnauzer</option>
+                                </select>
+                            </li> 
+                            <li>
+                                <label for="sexo" class="form-label">Sexo</label>
+                                <select name="sexo" id="sexo" class="form-select">
+                                    <option selected>seleccionar</option>
+                                    <option value="1">Hembra</option>
+                                    <option value="2">Macho</option>
+                                </select>  
+                            </li>
+                            <li>
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <input type="text"  class="form-control" id="ciudad" name="ciudad">
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="botonFiltro">Aplicar filtro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <img src="/img/icon-grey-photo.jpg"
+                            id="mascotaFoto" alt="imagen1" class="card-img-top rounded-2">
+                        <div class="card-body "style="background-color: #dddd">
+                            <h4 class="card-title">NombreMascota</h4>
+                            <ul style="list-style-type: none; text-align: center">
+                                <li style=" display: inline">Raza   |</li>
+                                <li style=" display: inline">Sexo   |</li>
+                                <li style=" display: inline">Ciudad   |</li>
+                                <li style=" display: inline">Estado   </li>
+                                <p style=" display: inline">Contacto: </span>telefono</p>
+                            </ul>
+                            <a href="#" class="botonPubli">Editar</a></a>
+                            <a href="#" class="botonPubli" >Eliminar </a></a>
+                            <a href="#" class="botonPubli">Actualizar </a></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center" >
+                        <img src="/img/icon-grey-photo.jpg"
+                            id="mascotaFoto" alt="imagen1" class="card-img-top rounded-2">
+                        <div class="card-body bg-gradient"  style="background-color: #dddd">
+                            <h4 class="card-title">NombreMascota</h4>
+                            <ul style="list-style-type: none; text-align: center">
+                                <li style=" display: inline">Raza   |</li>
+                                <li style=" display: inline">Sexo   |</li>
+                                <li style=" display: inline">Ciudad   |</li>
+                                <li style=" display: inline">Estado   </li>
+                                <p style=" display: inline">Contacto: </span>telefono</p>
+                            </ul>
+                            <a href="#" class="botonPubli">Editar</a></a>
+                            <a href="#" class="botonPubli" >Eliminar </a></a>
+                            <a href="#" class="botonPubli"">Actualizar </a></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center" >
+                        <img src="/img/icon-grey-photo.jpg"
+                            id="mascotaFoto" alt="imagen1" class="card-img-top rounded-2">
+                        <div class="card-body bg-gradient"  style="background-color: #dddd">
+                            <h4 class="card-title">NombreMascota</h4>
+                            <ul style="list-style-type: none; text-align: center">
+                                <li style=" display: inline">Raza   |</li>
+                                <li style=" display: inline">Sexo   |</li>
+                                <li style=" display: inline">Ciudad   |</li>
+                                <li style=" display: inline">Estado   </li>
+                                <p style=" display: inline">Contacto: </span>telefono</p>
+                            </ul>
+                            <a href="#" class="botonPubli">Editar</a></a>
+                            <a href="#" class="botonPubli" >Eliminar </a></a>
+                            <a href="#" class="botonPubli"">Actualizar </a></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-
-
-
-
-
+    
+    
+    
     <!--footer-->
+
     <footer class="footer-distributed" id="footer">
 
         <div class="footer-left">
@@ -147,7 +252,9 @@
     </footer>
 
     <!--scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 
 </body>
 

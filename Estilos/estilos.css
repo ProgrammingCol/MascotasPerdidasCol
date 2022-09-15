@@ -66,6 +66,7 @@ body {
     margin-bottom: 15px;
 }
 
+
 #boton:after,
 #boton:before {
     width: 150px;
@@ -90,6 +91,51 @@ body {
 }
 
 
+
+a.botonPubli{
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    width: 88px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    background: #5692a6;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 6px;
+}
+
+
+button.botonFiltro{
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    width: 150px;
+    height: 40px;
+    color: black;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    background: #fed7a9;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px; 
+}
+
+
 ul.navega li {
     display: inline;
     padding-right: 0.30em;
@@ -103,7 +149,7 @@ div#cabecera {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    margin-top: 10px ;
+    margin-top: 0px ;
     margin-bottom: 10px
 }
 
@@ -336,3 +382,16 @@ section {
 	}
 
 }
+
+#mascotaFoto{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: PX;
+    background-color: #dddd
+}
+
