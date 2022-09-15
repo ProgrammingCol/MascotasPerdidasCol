@@ -1,21 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mascoticas</title>
-    <link rel="icon" type="image/ico" href="/img/logo.png" title="favicon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Oscar Cornejo">
+    <meta name="description" content="Landing Page">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="icons/icomoon.css">
+    <link rel="stylesheet" href="/landing page del pro/css/styles.css">
+
 </head>
+
 <body>
-    <img src="/img/logo.png" align="right" alt="Logo_Mascoticas" style="max-width:100%"; width=150; height=150> 
-    <h1>MASCOTICAS</h1>
+
+    <!-- Contenedor Header -->
+    <header id="linkHome">
+        <nav id="navFixed" class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-10px">
+            <a class="navbar-brand" href="#linkHome">Mascoticas<small>.</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link scroll current" href="#linkHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkNosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkPublicar">Proceso de publicacion</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mascotas Perdidas
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="mascotasPerdidas.html">Ver publicaciones</a></li>
+                            <li><a class="dropdown-item" href="publicarMPerdida.html">Crear publicación</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mascotas Perdidas
+                                
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="mascotasPerdidas.html">Ver publicaciones</a></li>
+                                    <li><a class="dropdown-item" href="publicarMPerdida.html">Crear publicación</a></li>
+                                    <li class="nav-item"> -->
+                    <a class="nav-link scroll" href="#linkDonaciones">Donaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkContacto">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="boxLogo">
+            <img src="/landing page del pro/Imagenes/Artboard 1 final.svg" alt="">
+        </div>
+
+
+    </header>
+    <!-- Fin Contenedor Header -->
+
+    <!-- Contenedor Main -->
+    <main>
+        <a id="subir" class="icon-arrow-up scroll" href="#linkHome"></a>
+        <!-- Sección NOSOTROs -->
+        <section class="boxFeatures" id="linkNosotros">
+
+            <h3>NOSOTROS</h3>
+            <p>
+                <center>Mascoticas es una pagina sin animo de lucro que busca ser un medio por el cual encuentres a tu
+                    mascota</center>
+            </p>
+
+
+            <div class="features">
+                <div class="cardFeatures">
+                    <span class="icon-refresh"></span>
+                    <h4>Titulo</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae
+                        ab illum sunt ut in excepturi tenetur a.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="cardFeatures">
+                    <span class="icon-refresh"></span>
+                    <h4>Titulo</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae
+                        ab illum sunt ut in excepturi tenetur a.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="cardFeatures">
+                    <span class="icon-refresh"></span>
+                    <h4>Titulo</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae
+                        ab illum sunt ut in excepturi tenetur a.</p>
+                    <a href="#">Learn More</a>
+                </div>
+        </section>
+        <!-- Fin Sección NOSOTROS -->
+        <!-- Sección PASOS -->
+        <section class="boxAbout" id="linkPublicar">
+
+            <h3>Pasos para publicar a tu mascota</h3>
+
+            <div class="about">
+                <div class="imgAbout">
+                    <img src="/landing page del pro/Imagenes/Pasospublicacion.jpg" alt="">
+                </div>
+        </section>
+        <!-- Fin Sección PASOS -->
+        <!-- Sección DONACIONES -->
+        <section class="boxDonaciones" id="linkDonaciones">
+            <h1>DONACIONES</h1>
+            <p>Con tu aporte ayudas a mantener vivo este proyecto que dia a dia crece para seguir ayudando a mas
+                personas y mascotas en todo el pais</p>
+            <ul>
+                <li> Davivienda : 789760978778
+                </li>
+                <li> Bancolombia : 980948798478
+                </li>
+            </ul>
+            </div>
+
+        </section>
+        <!-- Fin Sección DONACIONES -->
+
+        <!-- Sección Contacto -->
+        <section class="boxContacto" id="linkContacto">
+            <h3>CONTACTO</h3>
+
+
+        </section>
+        <!-- Fin Sección Contacto -->
+
+    </main>
+    <!-- Fin Contenedor Main -->
+
+    <!-- Contenedor Footer -->
+    <footer class="footer">
+        <div class="boxTextFooter">
+        </div>
+    </footer>
+    <!-- Fin Contenedor Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
     
-    <H2>Más vida, Más amor</H2>
- 
-    <H2>Seccion 1</H2>
-    <H2>Seccion 2</H2>
-    <H2>seccion 3</H2>
-    <H2>seccion 4</H2>
 </body>
+
 </html>
