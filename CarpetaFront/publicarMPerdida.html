@@ -26,13 +26,13 @@
 
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="landingPage.html" class="nav-link p-3">Nosotros</a>
+                <a href="landingPage.html#linkNosotros" class="nav-link p-3">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a href="landingPage.html" class="nav-link p-3">Contáctanos</a>
+                <a href="landingPage.html#linkContacto" class="nav-link p-3">Contáctanos</a>
             </li>
             <li class="nav-item">
-                <a href="landingPage.html" class="nav-link p-3">Donaciones</a>
+                <a href="landingPage.html#linkDonaciones" class="nav-link p-3">Donaciones</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
@@ -45,7 +45,7 @@
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="landingPage.html#">Proceso para publicar</a></li>
+                    <li><a class="dropdown-item" href="landingPage.html#linkPublicar">Proceso para publicar</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -59,11 +59,10 @@
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="landingPage.html#">Proceso para publicar</a></li>
+                    <li><a class="dropdown-item" href="landingPage.html#linkPublicar">Proceso para publicar</a></li>
                 </ul>
             </li>
         </ul>
-
     </nav>
 
     <!--Cabecera-->
@@ -78,15 +77,65 @@
             style="margin-top:80px; margin-left:auto; margin-right: auto; padding-left:80px;padding-right:80px" <div>
             <form class="row class g-2">
                 <div class="col-sm-12">
-                    <legend style="text-align: center; margin-bottom: 30px; margin-top: 30px"><strong>Formulario de
+                    <legend style="text-align: center; margin-bottom: 20px; margin-top: 20px"><strong>Formulario de
                             registro </strong></legend>
                 </div>
+                <hr style="margin-top:30px; margin-bottom: 10px">
+                <!--DATOS DEL DUEÑO-->
                 <div class="col-sm-12">
-                    <label class="form-label" style="text-align:center"><strong>Datos de la mascota </strong>
-                        </legend>
+                    <label class="form-label" style="text-align:center"><strong>Datos del dueño </strong></legend>
                 </div>
 
-                <!--Primera fila de datos-->
+                <div class="col-sm-3">
+                    <label for="pnombre" class="form-label">Primer nombre</label>
+                    <input type="text" class="form-control" id="pnombre" name="pnombre">
+                </div>
+                <div class="col-sm-3">
+                    <label for="snombre" class="form-label">Segundo nombre</label>
+                    <input type="text" class="form-control" id="snombre" name="snombre">
+                </div>
+                <div class="col-sm-3">
+                    <label for="papellido" class="form-label">Primer apellido</label>
+                    <input type="text" class="form-control" id="papellido" name="papellido">
+                </div>
+                <div class="col-sm-3">
+                    <label for="sapellido" class="form-label">Segundo apellido</label>
+                    <input type="text" class="form-control" id="sapellido" name="sapellido">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="correo" class="form-label">Correo Electrónico</label>
+                    <input type="mail" class="form-control" id="correo" name="correo">
+                </div>
+                <div class="col-md-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" name="telefono">
+                </div>
+                <div class="col-md-3">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad" name="ciudad">
+                </div>
+                <div class="col-md-3">
+                    <label for="departamento" class="form-label">Departamento</label>
+                    <input type="text" class="form-control" id="departamento" name="departamento">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="idusuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="idusuario" name="idusuario">
+                </div>
+                <div class="col-md-6">
+                    <label for="clave" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="clave" name="clave">
+                </div>
+                <hr style="margin-top:30px; margin-bottom: 10px">
+
+                <!--DATOS DE LA MASCOTA-->
+                <div class="col-sm-12">
+                    <label class="form-label" style="text-align:center"><strong>Datos de la mascota </strong>
+
+                </div>
+
                 <div class="col-sm-3">
                     <label for="nombreM" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="nombreM" name="nombreM">
@@ -120,62 +169,24 @@
                     </select>
                 </div>
 
-                <!--segunda fila de datos-->
-                <div class="col-sm-12">
-                    <hr style="margin-top:25px">
-                    <label class="form-label" style="text-align:center"><strong>Datos del dueño </strong></legend>
-                </div>
-                <div class="col-sm-3">
-                    <label for="pnombre" class="form-label">Primer nombre</label>
-                    <input type="text" class="form-control" id="pnombre" name="pnombre">
-                </div>
-                <div class="col-sm-3">
-                    <label for="snombre" class="form-label">Segundo nombre</label>
-                    <input type="text" class="form-control" id="snombre" name="snombre">
-                </div>
-                <div class="col-sm-3">
-                    <label for="papellido" class="form-label">Primer apellido</label>
-                    <input type="text" class="form-control" id="papellido" name="papellido">
-                </div>
-                <div class="col-sm-3">
-                    <label for="sapellido" class="form-label">Segundo apellido</label>
-                    <input type="text" class="form-control" id="sapellido" name="sapellido">
-                </div>
-
-                <!--tercera fila-->
-                <div class="col-md-3">
-                    <label for="correo" class="form-label">Correo Electrónico</label>
-                    <input type="mail" class="form-control" id="correo" name="correo">
-                </div>
-                <div class="col-md-3">
-                    <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" id="telefono" name="telefono">
-                </div>
-                <div class="col-md-3">
-                    <label for="ciudad" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="ciudad" name="ciudad">
-                </div>
-                <div class="col-md-3">
-                    <label for="departamento" class="form-label">Departamento</label>
-                    <input type="text" class="form-control" id="departamento" name="departamento">
-                </div>
-                <!--cuarta fila-->
                 <div class="col-md-12">
                     <label for="descripcion" class="form-label">Descripción</label>
-                    <textarea name="descripcion" id="descripcion" rows="5" class="form-control"></textarea>
+                    <textarea name="descripcion" id="descripcion" rows="4" class="form-control"
+                        placeholder="Escriba las características de la mascota"></textarea>
                 </div>
                 <div class="col-sm-12">
-                    <hr style="margin-top:25px">
-                    <label class="form-label" style="text-align:center"><strong>Foto de la Mascota </strong>
-                        </legend>
+                    <label class="form-label" style="text-align:center"><strong>Foto de la mascota</strong>
                 </div>
                 <div>
                     <form name="cargar-imagenes" type="POST" enctype="multipart/formdata" style=" margin-bottom:25px">
-                        <input type="file" name="foto" value="Adjuntar archivo" /><br><br>
-                        <input type="submit" name="cargar-imagen" value="Cargar imagen" /><br><br>
+                        <input type="file" name="myfile" value="myfile" id="myfile" />
+                        <input type="submit" name="cargar-imagen" value="Cargar Imagen" class="d-inline-block"
+                            id="cargar-imagen" /><br><br>
                     </form>
                 </div>
-                <!--Sexta fila-->
+
+                <hr style="margin-top:30px; margin-bottom: 10px">
+
                 <div class="col-md-12">
                     <input type="checkbox" name="condiciones" id="condiciones" class="form-check-input">
                     <label for="condiciones" class="form-label" onclick="revisar()">Acepto terminos y
@@ -195,20 +206,18 @@
     <footer class="footer-distributed" id="footer">
 
         <div class="footer-left">
-
-            <h3>Mas<span>coticas</span></h3>
+            <h3>Masc<span><img src="/img/footprint.png" style="width: 25px"></span>ticas</h3>
 
             <p class="footer-links">
-                <a href="Inicio" class="link-1">Home</a>
+                <a href="landingPage.html" class="link-1">Inicio</a>
 
-                <a href="#">Nosotros</a>
+                <a href="landingPage.html#linkNosotros">Nosotros</a>
 
-                <a href="#">Alianzas</a>
+                <a href="">Alianzas</a>
 
-                <a href="#">Donaciones</a>
+                <a href="landingPage.html#linkDonaciones">Donaciones</a>
 
-                <a href="#">Proceso de publicación</a>
-
+                <a href="landingPage.html#linkPublicar">Proceso de publicación</a>
             </p>
 
             <p class="footer-company-name">Mascoticas © 2022</p>
@@ -243,12 +252,13 @@
 
             <div class="footer-icons">
 
-                <a href="https://www.twitter.com"><img src="/img/social_Twitter_1776.png" alt="Twitter" width="40"
-                        height="40" class="footer-icons d-inline-block"></a>
-                <a href="https://www.facebook.com"><img src="/img/social_instagram_1783.png" alt="Twitter" width="40"
-                        height="40" class="footer-icons d-inline-block"></a>
-                <a href="https://www.instagram.com"><img src="/img/social_facebook_1786.png" alt="Twitter" width="40"
-                        height="40" class="footer-icons d-inline-block"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="/img/social_Twitter_1776.png" alt="Twitter"
+                        width="40" height="40" class="footer-icons d-inline-block"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="/img/social_facebook_1786.png"
+                        alt="facebook" width="40" height="40" class="footer-icons d-inline-block"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="/img/social_instagram_1783.png"
+                        alt="Instagram" width="40" height="40" class="footer-icons d-inline-block"></a>
+
 
             </div>
 

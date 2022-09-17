@@ -1,3 +1,6 @@
+
+/*paleta de colores: broken dreamcicle  url: https://www.color-hex.com/color-palettes/?keyword=broken+dreamcicle*/
+
 .navbar {
     background: #000000
 }
@@ -99,7 +102,7 @@ a.botonPubli{
     text-align: center;
     font-size: 14px;
     width: 88px;
-    height: 40px;
+    height: 30px;
     color: white;
     cursor: pointer;
     letter-spacing: 1px;
@@ -109,7 +112,11 @@ a.botonPubli{
     border: none;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 6px;
+    padding-top: 3px;
+}
+
+a.botonPubli:hover{
+    background-color: #000000;
 }
 
 
@@ -130,11 +137,17 @@ button.botonFiltro{
     background: #fed7a9;
     border: none;
     margin-top: 0px;
-    margin-bottom: 15px;
-    padding-top: 6px;
-    padding-bottom: 6px; 
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    
 }
 
+
+button.botonFiltro:hover{
+    background-color: rgba(0, 0, 0, 0.12);
+    color: black;
+}
 
 ul.navega li {
     display: inline;
@@ -179,7 +192,7 @@ h1#textCabecera {
     letter-spacing: 4px;
     font-weight: 300;
     margin-bottom: 0PX;
-    margin-top: 5PX
+    margin-top: 5PX 
 }
 
 #footer {
@@ -242,12 +255,13 @@ section {
 
 .footer-distributed h3{
 	color:  black;
-	font: normal 36px 'Open Sans', cursive;
+	font: normal 36px fantasy;
 	margin: 0;
 }
 
 .footer-distributed h3 span{
-	color:  #5692a6;
+	color:  black   ;
+    font: normal 36px fantasy;
 }
 
 /* Footer links */
@@ -384,8 +398,8 @@ section {
 }
 
 #mascotaFoto{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     top: 0;
     left: 0;
     right: 0;
@@ -395,3 +409,8 @@ section {
     background-color: #dddd
 }
 
+table.infoMascotas{
+    border-radius: 2px;
+    border-color: navajowhite;
+    align-content: center;
+}
