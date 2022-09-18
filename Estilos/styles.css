@@ -33,6 +33,7 @@ h3 {
 
 p {
     font-size: 30px;
+    text-align: center;
 }
 
 .contenedor {
@@ -50,6 +51,9 @@ p {
 .boxLogo {
     display: flex;
     justify-content: center;
+}
+.imgLogoHeader{
+    padding-top: 100px;
 }
 
 
@@ -176,13 +180,13 @@ a.botonGetStarted:hover {
 
 /* ESTILOS NOSOTROS */
 
-.boxFeatures {
+.boxNosotros {
     padding: 150px;
     background-color: #ffcccc;
     height: 100vh;
 }
 
-.features {
+.nosotros {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -194,7 +198,7 @@ a.botonGetStarted:hover {
     margin-top: 150px;
 }
 
-.cardFeatures {
+.cardNosotros {
     background: #fdfdfd;
     width: 30%;
     border-radius: 3px;
@@ -203,20 +207,20 @@ a.botonGetStarted:hover {
     margin-bottom: 10px;
 }
 
-.cardFeatures span {
+.cardNosotros span {
     box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.2);
 }
 
-.cardFeatures a {
+.cardNosotros a {
     color: #02d2b5;
 }
 
-.cardFeatures:hover {
+.cardNosotros:hover {
     cursor: pointer;
     transform: scale(0.9, 0.9);
 }
 
-.cardFeatures span {
+.cardNosotros span {
     background: #00d2b5;
     color: #fff;
     width: 35px;
@@ -228,12 +232,12 @@ a.botonGetStarted:hover {
     margin-bottom: 1rem;
 }
 
-.cardFeatures h4 {
+.cardNosotros h4 {
     font-size: 14px;
     font-weight: bold;
 }
 
-.cardFeatures p {
+.cardNosotros p {
     font-size: 12px;
     color: #9c9c9c;
 }
@@ -244,28 +248,28 @@ a.botonGetStarted:hover {
 
 /* ESTILOS PASOS DE PUBLICACION */
 
-.boxAbout {
+.boxPublicar {
     padding: 150px;
     background-color: #fed7a9;
     height: 100vh;
 }
 
-.about {
+.publicar {
     padding: 20px 10px;
     width: 80%;
     margin: auto;
     }
 
-.imgAbout {
+.imgPublicar {
     width: 70%;
 }
 
-.imgAbout img {
+.imgPublicar img {
     width: 150%;
     vertical-align: top;
 }
 
-.contenidoAbout h3 {
+.contenidoPublicar h3 {
     font-size: 30px;
     text-align: left;
     margin-bottom: 20px;
@@ -287,7 +291,7 @@ a.botonGetStarted:hover {
 
 .boxContacto {
     padding: 150px;
-    background-color: #fed7a9;
+    background-color: #ffffff;
     height: 100vh;
 }
 
@@ -296,222 +300,46 @@ a.botonGetStarted:hover {
 
 /*  ESTILOS FOOTER*/
 
-.navbar {
-    background: #000000
-}
-
-.nav-item::after {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 2px;
-    background: #ffcccc;
-    transition: 0.4s
-}
-
-.nav-item:hover::after {
-    width: 100%
-}
-
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .show>.nav-link,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #ffcccc
-}
-
-.nav-link {
-    padding: 25px 5px;
-    transition: 0.2s
-}
-
-body {
-    background-color: white;
-}
-
-#formulario {
-    text-align: rigth;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    border: 1px solid black;
-    border-radius: 0.5%;
-    max-width: 60%;
-    max-block-size: 1000px;
-    background-color: #eee;
-    ;
-}
-
-
-#boton {
-    position: relative;
-    display: block;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 16px;
-    width: 100px;
-    height: 40px;
-    color: white;
-    cursor: pointer;
-    letter-spacing: 2px;
-    text-decoration: none;
-    transition: all ease 0.5s;
-    background: black;
-    border: none;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-
-#boton:after,
-#boton:before {
-    width: 150px;
-    height: 50px;
-    content: rgb(14, 12, 12);
-    display: block;
-    cursor: pointer;
-}
-
-#boton:hover {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-    background: #5692a6;
-
-    width: 150px;
-}
-
-#boton:hover:after,
-#boton:hover:before {
-    transform: rotate(45deg), scaleX(130%);
-    transition: all ease 0.5s;
-    width: 150px;
-}
-
-
-
-a.botonPubli{
-    position: relative;
-    display: inline-block;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 14px;
-    width: 88px;
-    height: 40px;
-    color: white;
-    cursor: pointer;
-    letter-spacing: 1px;
-    text-decoration: none;
-    transition: all ease 0.5s;
-    background: #5692a6;
-    border: none;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 6px;
-}
-
-
-button.botonFiltro{
-    position: relative;
-    display: inline-block;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 900;
-    width: 150px;
-    height: 40px;
-    color: black;
-    cursor: pointer;
-    letter-spacing: 1px;
-    text-decoration: none;
-    transition: all ease 0.5s;
-    background: #fed7a9;
-    border: none;
-    margin-top: 0px;
-    margin-bottom: 15px;
-    padding-top: 6px;
-    padding-bottom: 6px; 
-}
-
-
-ul.navega li {
-    display: inline;
-    padding-right: 0.30em;
-    margin-top: 25px;
-}
-
-
-div#cabecera {
-    background-color: #fed7a9;
-    height: 200px;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-top: 0px ;
-    margin-bottom: 10px
-}
-
-h1#textCabecera {
-    font-family: fantasy;
-    font-size: 40px;
-    color: black;
-}
-
-
-#textCabecera {
-    font-family: fantasy;
-    font-size: 50px;
-    color: black;
-}
-
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
-
-
-#titleFooter {
+/* #titleFooter {
     font-size: 22PX;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 4px;
     font-weight: 300;
     margin-bottom: 0PX;
     margin-top: 5PX
-}
+} */
 
 #footer {
     background-color: #fed7a9;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: auto;
-    height: 100%;
-    margin-top: 60px;
+    height: 50vh;
     margin-bottom: 0px;
     font: bold 17px sans-serif;
     font-size: 17px;
     padding-bottom: 50px;
     color: black;
-    display: flexbox
+    display: flexbox;
 }
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-* {
-  font-family: Open Sans;
-}
+/* * {
+    font-family: Open Sans;
+} */
 
-section {
-  width: 100%;
-  display: inline-block;
-  background: #fed7a9;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
+/* section {
+    width: 100%;
+    display: inline-block;
+    background: #ee850e;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+} */
 
 .footer-distributed{
 	background: #fed7a9;
@@ -538,14 +366,8 @@ section {
 
 /* The company logo */
 
-.footer-distributed h3{
-	color:  black;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  #5692a6;
+.imgLogo {
+    width: 100%;
 }
 
 /* Footer links */
@@ -559,7 +381,7 @@ section {
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-  font-weight:400;
+    font-weight:400;
 	text-decoration: none;
 	color:  inherit;
 }
@@ -692,5 +514,186 @@ section {
     margin-top: PX;
     background-color: #dddd
 }
+
+
+
+/* MEDIA QUERIES */
+
+
+    @media screen and (max-width:800px) {
+    .boxLogo {
+        display: none;
+    }
+    /* ESTILOS NAVBAR */
+    .navbar-brand {
+        display: block;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    /* ESTILOS HEADER */
+    header {
+        height: auto;
+    }
+    .boxHeader {
+        flex-wrap: wrap;
+        height: 900px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .boxHeader .textosHeader {
+        width: 90%;
+        margin-bottom: 100px;
+        text-align: left;
+        left: 0;
+        margin: 0 auto;
+    }
+    .boxHeader h1 {
+        font-size: 40px;
+    }
+    .boxHeader .textosHeader h1 {
+        width: 100%;
+    }
+    .boxHeader .textosHeader p {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .boxHeader .imgHeader {
+        width: 100%;
+        top: -40px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgHeader img {
+        width: 95%;
+    }
+    /* ESTILOS NOSOTROS */
+    .boxFeatures {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .features {
+        width: 90%;
+    }
+    .cardFeatures {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    /* ESTILOS PROCESO DE PUBLICACION */
+    .boxAbout {
+        height: 100%;
+    }
+    .about {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .imgAbout {
+        width: 100%;
+    }
+    .contenidoAbout {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .contenidoAbout h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contenidoAbout p {
+        width: 100%;
+        text-align: center;
+    }
+    /* ESTILOS TESTIMONIAL */
+    .boxDonaciones {
+        height: 100%;
+    }
+    /* ESTILOS CONTACTO */
+    .contacto {
+        background: rgb(129, 27, 27);
+        width: 90%;
+        margin: 30px auto 0 auto;
+    }
+    /* ESTILOS FOOTER */
+    .boxContacto {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .boxLogo {
+        display: none;
+    }
+    .current {
+        border-bottom: 2px solid #f5f5f5;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    /* ESTILOS NAVBAR */
+    .navbar-brand {
+        display: block;
+    }
+    .nav-link:hover {
+        border-bottom: none;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    /* ESTILOS HEADER */
+    .boxHeader {
+        height: 700px;
+    }
+    .boxHeader .textosHeader {
+        width: 90%;
+    }
+    .boxHeader h1 {
+        font-size: 25px;
+    }
+    .boxHeader h2 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    /* ESTILOS FEATURES */
+    .features {
+        width: 100%;
+    }
+    /* ESTILOS CALL TO ACTIONS */
+    .boxCallToActions {
+        height: 100%;
+    }
+    .boxCardAnimated {
+        position: relative;
+        right: 0vh;
+        transform: none;
+        animation: none;
+    }
+    /* ESTILOS ABOUT */
+    .about {
+        width: 100%;
+    }
+    /* ESTILOS CONTACTO */
+    .boxContacto {
+        padding: 50px 30px;
+    }
+    .contacto {
+        width: 100%;
+        margin: 0;
+    }
+    /* ESTILOS FOOTER */
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+} 
 
 
