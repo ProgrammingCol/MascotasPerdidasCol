@@ -1,3 +1,4 @@
+<<<<<<< HEAD:css/styles.css
 *,
 ::after,
 ::before {
@@ -694,3 +695,758 @@ section {
 }
 
 
+=======
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedor {
+    padding: 80px;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.boxLogo {
+    display: flex;
+    justify-content: center;
+}
+.imgLogoHeader{
+    padding-top: 100px;
+}
+
+.boxPublicaciones {
+    background-color: #dddddd;
+    height: 60vh;
+    margin-top: 30px;
+}
+
+.buttonsPubli {
+    background-color:#5692a6;
+    border-radius: 8px; 
+    position: absolute;
+    width: 20vh;
+    transform: translate(-50%, -50%);
+    top:43vh;
+    left:40vh;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonsPubli2 {
+    background-color:#5692a6;
+    border-radius: 8px;
+    position: absolute;
+    width: 20vh;
+    transform: translate(-50%, -50%);
+    top:53vh;
+    left:40vh;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+
+.buttonsPubli3 {
+    background-color:#5692a6; 
+    border-radius: 8px;
+    position: absolute;
+    width: 20vh;
+    transform: translate(-50%, -50%);
+    top:63vh;
+    left:40vh;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonsPubli4 {
+    background-color:#5692a6; 
+    border-radius: 8px;
+    position: absolute;
+    width: 20vh;
+    transform: translate(-50%, -50%);
+    top:43vh;
+    left:160vh;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonsPubli5 {
+    background-color:#5692a6; 
+    border-radius: 8px;
+    position: absolute;
+    width: 20vh;
+    transform: translate(-50%, -50%);
+    top:53vh;
+    left:160vh;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonsPubli6 {
+    background-color:#5692a6; 
+    border-radius: 8px;
+    position: absolute;
+    width: 20vh;
+    transform: translate(-50%, -50%);
+    top:63vh;
+    left:160vh;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.buttonsPubli:hover, .buttonsPubli:active { 
+    background-color: #a9fed7;
+}
+
+.buttonsPubli2:hover, .buttonsPubli2:active { 
+    background-color: #a9fed7;
+}
+
+.buttonsPubli3:hover, .buttonsPubli3:active { 
+    background-color: #a9fed7;
+}
+
+.buttonsPubli4:hover, .buttonsPubli4:active { 
+    background-color: #a9fed7;
+}
+
+.buttonsPubli5:hover, .buttonsPubli5:active { 
+    background-color: #a9fed7;
+}
+
+.buttonsPubli6:hover, .buttonsPubli6:active { 
+    background-color: #a9fed7;
+}
+
+
+.imgPerrito{
+    width: 30vh;
+    position: absolute; 
+    left: 60vh; 
+    top: 43vh; 
+    border: #5692a6 7px solid;
+    border-radius: 8px;
+}
+
+.imgPerrito2{
+    width: 30vh;
+    position: absolute; 
+    left: 110vh; 
+    top: 43vh; ; 
+    border: #5692a6 7px solid;
+    border-radius: 8px;
+}
+/* .buttonsPubli:hover {
+    cursor: pointer;
+    transform: scale(0.9, 0.9);
+} */
+
+
+/* ESTILOS HEADER */
+
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(254,215,169);
+}
+
+.boxHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 635px;
+    color: #000;
+    overflow: hidden;
+}
+
+
+.boxHeader .imgHeader {
+    right: -19%;
+    position: relative;
+}
+
+
+
+/* ESTILOS NAVBAR */
+
+.navbar {
+    box-shadow: 0 2px 2px -2px #5e5c5c;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+.navbar-brand small {
+    color: #20bf6b;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #20bf6b;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 1);
+}
+
+.bg-light {
+    background-color: #ffffff!important;
+}
+
+/* ESTILOS NOSOTROS */
+
+.boxNosotros {
+    background-color: #ffcccc;
+    height: 100vh;
+    padding: 90px 0px 0px 0px;
+    
+}
+.boxNosotros h3 {
+    text-align: center;
+    font-size: 30px;
+}
+.boxNosotros p {
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width:100%;
+    height: 700px;
+    overflow: hidden;
+    
+}
+
+.cardNosotros {
+    background: #fdfdfd;
+    width:40vh;
+    border-radius: 6px;
+    padding:10px;
+    transition: 0.4s;
+    margin-bottom: 10px;
+}
+
+.cardNosotros span {
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardNosotros a {
+    color: #ffffff;
+    background-color: #5692a6; 
+    border: transparent;
+    border-radius: 8px;
+    margin: 0px 0px 0px 150px;
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.cardNosotros a :hover, .cardNosotros a:active { 
+    background-color: #a9fed7;
+}
+
+
+
+.cardNosotros img {
+    width: 15vh;
+    margin:20px 0px 10px 110px;    
+}
+
+
+
+.cardNosotros:hover {
+    cursor: pointer;
+    transform: scale(0.9, 0.9);
+}
+
+.cardNosotros h4 {
+    padding: 20px 0px 5px 0px;   
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cardNosotros p {
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    margin:20px 30px 10px 10px; 
+}
+
+
+/* ESTILOS PASOS DE PUBLICACION */
+
+.boxPublicar {
+    padding: 150px 0px 0px 0px;
+    background-color: #fed7a9;
+    height: 100vh;
+}
+
+.boxPublicar img {
+    position: absolute;
+    width: 100vh;
+    margin: 50px 0px 0px 450px;
+}
+.boxPublicar h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* ESTILOS DONACIONES */
+
+.boxDonaciones {
+    padding: 150px 0px 0px 50px;
+    height: 100%;
+    background-color:#ffcccc ;
+    
+}
+
+.boxDonaciones h1 {
+    text-align: left;
+}
+
+.boxDonaciones p {
+    text-align: left;
+    font-size:20px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 30px 100px 0px;
+}
+
+.boxDonaciones ul {
+    text-align: left;
+    font-size: 20px;
+}
+
+.boxDonaciones img {
+    border: #5692a6 7px solid ;
+    border-radius: 20px;
+    margin: -30vh 0vh 100vh 100vh;
+}
+
+
+
+/*  ESTILOS FOOTER*/
+
+/* #titleFooter {
+    font-size: 22PX;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 4px;
+    font-weight: 300;
+    margin-bottom: 0PX;
+    margin-top: 5PX
+} */
+
+#footer {
+    background-color: #fed7a9;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: auto;
+    height: 50vh;
+    margin-bottom: 0px;
+    font: bold 17px sans-serif;
+    font-size: 17px;
+    padding-bottom: 50px;
+    color: black;
+    display: flexbox;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+/* * {
+    font-family: Open Sans;
+} */
+
+/* section {
+    width: 100%;
+    display: inline-block;
+    background: #ee850e;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+} */
+
+.footer-distributed{
+	background: #fed7a9;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.imgLogo {
+    width: 100%;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+    font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color:black;
+	font-size: 28px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 16px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+    font-weight:50;
+    font-size: 16px;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:16px;
+	line-height:2;
+    
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5692a6;
+	text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 10px;
+    left: 0;
+    color: black;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #000000;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+    padding-bottom: 4px
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 5px;
+}
+
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+    @media screen and (max-width:800px) {
+    .boxLogo {
+        display: none;
+    }
+    /* ESTILOS NAVBAR */
+    .navbar-brand {
+        display: block;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    /* ESTILOS HEADER */
+    header {
+        height: auto;
+        width: auto;
+    }
+    .boxHeader {
+        flex-wrap: wrap;
+        height: 900px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .boxHeader .imgHeader {
+        width: 100%;
+        top: -40px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* ESTILOS NOSOTROS */
+    .boxNosotros {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .nosotros {
+        width: 90%;
+    }
+    .cardNosotros {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    /* ESTILOS PROCESO DE PUBLICACION */
+    .boxPublicar {
+        height: 100%;
+    }
+    .boxPublicar img {
+        width: 100%;
+
+    }
+    
+    .boxPublicar h3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    /* ESTILOS TESTIMONIAL */
+    .boxDonaciones {
+        height: 100%;
+    }
+    /* ESTILOS CONTACTO */
+    .contacto {
+        background: rgb(129, 27, 27);
+        width: 90%;
+        margin: 30px auto 0 auto;
+    }
+    /* ESTILOS FOOTER */
+    .footer-distributed {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .boxLogo {
+        display: none;
+    }
+    .current {
+        border-bottom: 2px solid #f5f5f5;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    /* ESTILOS NAVBAR */
+    .navbar-brand {
+        display: block;
+    }
+    .nav-link:hover {
+        border-bottom: none;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    /* ESTILOS HEADER */
+    .boxHeader {
+        height: 700px;
+    }
+    .boxHeader .textosHeader {
+        width: 90%;
+    }
+    .boxHeader h1 {
+        font-size: 25px;
+    }
+    .boxHeader h2 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    /* ESTILOS FEATURES */
+    .features {
+        width: 100%;
+    }
+    /* ESTILOS CALL TO ACTIONS */
+    .boxCallToActions {
+        height: 100%;
+    }
+    .boxCardAnimated {
+        position: relative;
+        right: 0vh;
+        transform: none;
+        animation: none;
+    }
+    /* ESTILOS ABOUT */
+    .about {
+        width: 100%;
+    }
+    /* ESTILOS CONTACTO */
+    .boxContacto {
+        padding: 50px 30px;
+    }
+    .contacto {
+        width: 100%;
+        margin: 0;
+    }
+    /* ESTILOS FOOTER */
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+} 
+
+
+
+>>>>>>> 0933037aee128b161e10cc4d4766f7618ac4dc67:Estilos/styles.css

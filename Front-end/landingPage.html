@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Oscar Cornejo">
     <meta name="description" content="Landing Page">
-    <title>Landing Page</title>
-
+    <title>Mascoticas</title>
+    <link rel="icon" type="image/ico" href="/img/logo.png" title="favicon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="icons/icomoon.css">
@@ -38,26 +38,11 @@
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#linkPublicar">Proceso de publicacion</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Mascotas Perdidas
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="mascotasPerdidas.html">Ver publicaciones</a></li>
-                            <li><a class="dropdown-item" href="publicarMPerdida.html">Crear publicación</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Mascotas Perdidas
-                                
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="mascotasPerdidas.html">Ver publicaciones</a></li>
-                                    <li><a class="dropdown-item" href="publicarMPerdida.html">Crear publicación</a></li>
-                                    <li class="nav-item"> -->
+                    <li class="nav-item">
                     <a class="nav-link scroll" href="#linkDonaciones">Donaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkContacto">Contacto</a>
+                        <a class="nav-link scroll" href="#footer">Contacto</a>
                     </li>
 
                 </ul>
@@ -65,14 +50,22 @@
         </nav>
 
         <div class="boxLogo">
-            <img src="/landing page del pro/Imagenes/Artboard 1 final.svg" alt="">
+            <img class= "imgLogoHeader" src="Imagenes/logoMascoticas.svg" alt="">
         </div>
-        <div>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-            <br>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
-            <br>
-            <button type="button" class="btn btn-outline-primary">Primary</button>
+        <div class="boxPublicaciones">
+            <div>
+                <a class="buttonsPubli" href="#" target="_blank">Publicar un anuncio</a>
+                <a class="buttonsPubli2" href="#" target="_blank">Publicar mascota perdida</a>
+                <a class="buttonsPubli3" href="#" target="_blank">Publicar mascota encontrada</a>
+                <img class="imgPerrito" src="Imagenes/perrito.jpg" alt="">
+            </div>
+            <div>
+                <a class="buttonsPubli4" href="" target="_blank">Ver publicaciones</a>
+                <a class="buttonsPubli5" href="#" target="_blank">Ver mascotas perdidas</a>
+                <a class="buttonsPubli6" href="#" target="_blank">Ver mascotas encontradas</a>
+                <img class="imgPerrito2" src="Imagenes/gatoperro.jpg" alt="">
+            </div>
+            
         </div>
 
 
@@ -83,56 +76,58 @@
     <main>
         <a id="subir" class="icon-arrow-up scroll" href="#linkHome"></a>
         <!-- Sección NOSOTROs -->
-        <section class="boxFeatures" id="linkNosotros">
+        <section class="boxNosotros" id="linkNosotros">
 
             <h3>NOSOTROS</h3>
-            <p>
-                <center>Mascoticas es una pagina sin animo de lucro que busca ser un medio por el cual encuentres a tu
-                    mascota</center>
-            </p>
+            <p> Mascoticas es una pagina sin animo de lucro que busca ser un medio por el cual encuentres a tu
+                    mascota </p>
 
 
-            <div class="features">
-                <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae
-                        ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
-                </div>
-
-                <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae
-                        ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
-                </div>
-
-                <div class="cardFeatures">
-                    <span class="icon-refresh"></span>
-                    <h4>Titulo</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit est ullam quis recusandae
-                        ab illum sunt ut in excepturi tenetur a.</p>
-                    <a href="#">Learn More</a>
-                </div>
+                    <div class="nosotros">
+                        <div class="cardNosotros">
+                            <img   src="Imagenes/logoGatuno.png " alt="">
+                            <h4>Corazón Gatuno</h4>
+                            <p>La Fundación Corazón Gatuno ubicada en la ciudad de Cali, es una entidad sin ánimo de lucro que tiene como objetivo social el amparo y defensa de los animales en condiciones de abandono.</p>
+                            <a href="https://www.corazongatuno.org/" target="_blank">IR</a>
+                        </div>
+        
+                        <div class="cardNosotros">
+                        <img  src="Imagenes/logobe.png" alt="">
+                            <h4>Veterinaria Betel</h4>
+                            <p>En Betel Clínica de Especialidades Veterinarias encontrarás un servicio integral con los más altos estándares de calidad en atención, servicios, productos y expectativas de nuestros clientes,
+                                especialidad de cardiología, especialidad de ortopedia y muchas más ¡todo en un solo lugar!</p>
+                            <a href="https://especialidadesveterinariasbetel.com/" target="_blank">IR</a>
+                        </div>
+        
+                        <div class="cardNosotros">
+                            <img src="Imagenes/ChipsLogo.svg" alt="">
+                            <h4>Chips para mascotas</h4>
+                            <p>Sabemos de lo importante que puede ser tu mascota  para ti, por esta razón los chips de rastreo suelen ser la mejor opción para el adecuado cuidado  de ella.</p>
+                            <a href="https://chipparamascotas.com/" target="_blank">IR</a>
+                        </div>
+                        
+                        <div class="cardNosotros">
+                            <img src="Imagenes/logoHuellitas.svg" alt="">
+                            <h4>Huellitas</h4>
+                            <p>¿Andas en busca de un nuevo compañero? huellitas te puede ayudar con esta tarea, ¡adopta! </p>
+                            <a href="https://huellitas.social/" target="_blank">IR</a>
+                        </div>
+                    </div>
         </section>
         <!-- Fin Sección NOSOTROS -->
         <!-- Sección PASOS -->
-        <section class="boxAbout" id="linkPublicar">
+        <section class="boxPublicar" id="linkPublicar">
 
             <h3>Pasos para publicar a tu mascota</h3>
-
-            <div class="about">
-                <div class="imgAbout">
-                    <img src="/landing page del pro/Imagenes/Pasospublicacion.jpg" alt="">
-                </div>
+            <img src="Imagenes/Pasospublicacion.jpg" alt="">
+                
         </section>
         <!-- Fin Sección PASOS -->
         <!-- Sección DONACIONES -->
         <section class="boxDonaciones" id="linkDonaciones">
             <h1>DONACIONES</h1>
-            <p>Con tu aporte ayudas a mantener vivo este proyecto que dia a dia crece para seguir ayudando a mas
+            <p>Con tu aporte ayudas a mantener vivo este proyecto <br>
+                que dia a dia crece para seguir ayudando <br> a mas
                 personas y mascotas en todo el pais</p>
             <ul>
                 <li> Davivienda : 789760978778
@@ -140,19 +135,11 @@
                 <li> Bancolombia : 980948798478
                 </li>
             </ul>
+            <img  src="Imagenes/perrogato.jpg" alt="">
             </div>
 
         </section>
         <!-- Fin Sección DONACIONES -->
-
-        <!-- Sección Contacto -->
-        <section class="boxContacto" id="linkContacto">
-            <h3>CONTACTO</h3>
-
-
-        </section>
-        <!-- Fin Sección Contacto -->
-
     </main>
     <!-- Fin Contenedor Main -->
 
@@ -161,7 +148,7 @@
 
         <div class="footer-left">
 
-            <img src="/landing page del pro/Imagenes/Artboard 1 final.svg" alt="">
+            <img class="imgLogo" src="Imagenes/logoMascoticas.svg" alt="">
 
             <p class="footer-links">
                 <a href="Inicio" class="linkHome">Home</a>
@@ -222,7 +209,7 @@
     </footer>
     <!-- Fin Contenedor Footer -->
 
-
+    <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
