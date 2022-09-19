@@ -9,7 +9,7 @@
     <link rel="icon" type="image/ico" href="/img/logo.png" title="favicon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="\Estilos\estilos.css">
+        <link rel="stylesheet" href="/css/estilos.css">
 </head>
 
 <body>
@@ -67,7 +67,7 @@
 
     <!--Cabecera-->
     <div class="container-fluid p-4  pb-5 bg-gradient bg-opacity-25 text-black-50 text-center" id="cabecera">
-        <h1 class="mb-3 mt-5" id="textCabecera">MASCOTAS ENCONTRADAS</h1>
+        <h1 class="mb-3 mt-5" id="textCabecera">MASCOTAS PERDIDAS</h1>
         <p>!Llena el formulario y publica en nuestra red!</p>
     </div>
 
@@ -75,7 +75,7 @@
     <div>
         <div class=" container-sm " id="formulario"
             style="margin-top:80px; margin-left:auto; margin-right: auto; padding-left:80px;padding-right:80px" <div>
-            <form class="row class g-2">
+            <form  method="get" action="" class="row class g-2">
                 <div class="col-sm-12">
                     <legend style="text-align: center; margin-bottom: 20px; margin-top: 20px"><strong>Formulario de
                             registro </strong></legend>
@@ -83,50 +83,50 @@
                 <hr style="margin-top:30px; margin-bottom: 10px">
                 <!--DATOS DEL DUEÑO-->
                 <div class="col-sm-12">
-                    <label class="form-label" style="text-align:center"><strong>Datos del usuario</strong></legend>
+                    <label class="form-label" style="text-align:center"><strong>Datos del dueño </strong></legend>
                 </div>
 
                 <div class="col-sm-3">
-                    <label for="pnombre" class="form-label">Primer nombre</label>
-                    <input type="text" class="form-control" id="pnombre" name="pnombre">
+                    <label for="MPpnombre" class="form-label">Primer nombre</label>
+                    <input type="text" class="form-control" id="MPpnombre" name="MPpnombre" required>
                 </div>
                 <div class="col-sm-3">
-                    <label for="snombre" class="form-label">Segundo nombre</label>
-                    <input type="text" class="form-control" id="snombre" name="snombre">
+                    <label for="MPsnombre" class="form-label">Segundo nombre</label>
+                    <input type="text" class="form-control" id="MPsnombre" name="MPsnombre" required>
                 </div>
                 <div class="col-sm-3">
-                    <label for="papellido" class="form-label">Primer apellido</label>
-                    <input type="text" class="form-control" id="papellido" name="papellido">
+                    <label for="MPpapellido" class="form-label">Primer apellido</label>
+                    <input type="text" class="form-control" id="MPpapellido" name="MPpapellido" required>
                 </div>
                 <div class="col-sm-3">
-                    <label for="sapellido" class="form-label">Segundo apellido</label>
-                    <input type="text" class="form-control" id="sapellido" name="sapellido">
+                    <label for="MPsapellido" class="form-label">Segundo apellido</label>
+                    <input type="text" class="form-control" id="MPsapellido" name="MPsapellido" required>
                 </div>
 
                 <div class="col-md-3">
-                    <label for="correo" class="form-label">Correo Electrónico</label>
-                    <input type="mail" class="form-control" id="correo" name="correo">
+                    <label for="MPcorreo" class="form-label">Correo Electrónico</label>
+                    <input type="mail" class="form-control" id="MPcorreo" name="MPcorreo" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" id="telefono" name="telefono">
+                    <label for="MPtelefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="MPtelefono" name="MPtelefono" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="ciudad" class="form-label">Ciudad</label>
-                    <input type="text" class="form-control" id="ciudad" name="ciudad">
+                    <label for="MPciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="MPciudad" name="MPciudad" required>
                 </div>
                 <div class="col-md-3">
-                    <label for="departamento" class="form-label">Departamento</label>
-                    <input type="text" class="form-control" id="departamento" name="departamento">
+                    <label for="MPdepartamento" class="form-label">Departamento</label>
+                    <input type="text" class="form-control" id="MPdepartamento" name="MPdepartamento" required>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="idusuario" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" id="idusuario" name="idusuario">
+                    <label for="MPidusuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="MPidusuario" name="MPidusuario" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="clave" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="clave" name="clave">
+                    <label for="MPclave" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="MPclave" name="MPclave" required>
                 </div>
                 <hr style="margin-top:30px; margin-bottom: 10px">
 
@@ -137,20 +137,20 @@
                 </div>
 
                 <div class="col-sm-3">
-                    <label for="nombreM" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombreM" name="nombreM">
+                    <label for="MPnombrem" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="MPnombrem" name="MPnombrem" required>
                 </div>
                 <div class="col-sm-3">
-                    <label for="especie" class="form-label">Especie</label>
-                    <select name="especie" id="especie" class="form-select">
+                    <label for="MPespecie" class="form-label">Especie</label>
+                    <select name="especie" id="MPespecie" class="form-select" required>
                         <option selected="seleccionar">seleccionar</option>
                         <option value="1">Perro</option>
                         <option value="2">Gato</option>
                     </select>
                 </div>
                 <div class="col-sm-3">
-                    <label for="raza" class="form-label">Raza</label>
-                    <select name="raza" id="raza" class="form-select">
+                    <label for="MPraza" class="form-label">Raza</label>
+                    <select name="MPraza" id="MPraza" class="form-select" required>
                         <option selected>seleccionar</option>
                         <option value="1">Labrador</option>
                         <option value="2">Alaskan malamute</option>
@@ -161,8 +161,8 @@
                     </select>
                 </div>
                 <div class="col-sm-3">
-                    <label for="sexo" class="form-label">Sexo</label>
-                    <select name="sexo" id="sexo" class="form-select">
+                    <label for="MPsexo" class="form-label">Sexo</label>
+                    <select name="MPsexo" id="MPsexo" class="form-select" required>
                         <option selected>seleccionar</option>
                         <option value="1">Hembra</option>
                         <option value="2">Macho</option>
@@ -170,31 +170,31 @@
                 </div>
 
                 <div class="col-md-12">
-                    <label for="descripcion" class="form-label">Descripción</label>
-                    <textarea name="descripcion" id="descripcion" rows="4" class="form-control"
-                        placeholder="Escriba las características de la mascota"></textarea>
+                    <label for="MPdescripcion" class="form-label">Descripción</label>
+                    <textarea name="MPdescripcion" id="MPdescripcion" rows="4" class="form-control"
+                        placeholder="Escriba las características de la mascota" required></textarea>
                 </div>
                 <div class="col-sm-12">
                     <label class="form-label" style="text-align:center"><strong>Foto de la mascota</strong>
                 </div>
                 <div>
-                    <form name="cargar-imagenes" type="POST" enctype="multipart/formdata" style=" margin-bottom:25px">
-                        <input type="file" name="myfile" value="myfile" id="myfile" />
-                        <input type="submit" name="cargar-imagen" value="Cargar Imagen" class="d-inline-block"
-                            id="cargar-imagen" /><br><br>
+                    <form name="MPcargar-imagenes" type="POST" enctype="multipart/formdata" style=" margin-bottom:25px">
+                        <input type="file" name="MPmyfile" value="myfile" id="MPmyfile" required/>
+                        <input type="submit" name="MPcargarimg" value="Cargar Imagen" class="d-inline-block"
+                            id="MPcargarimg" /><br><br>
                     </form>
                 </div>
 
                 <hr style="margin-top:30px; margin-bottom: 10px">
 
                 <div class="col-md-12">
-                    <input type="checkbox" name="condiciones" id="condiciones" class="form-check-input">
-                    <label for="condiciones" class="form-label" onclick="revisar()">Acepto terminos y
-                        condiciones</label>
+                    <input type="checkbox" name="MPcondiciones" id="MPcondiciones" class="form-check-input"  value="false" required>
+                    <label for="MPcondiciones" class="form-label">Acepto terminos y
+                        condiciones</label><br><br>
                 </div>
                 <!--septima fila-->
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary" id="boton">Enviar</button>
+                    <button type="submit" class="btn btn-primary" id="MPbtnenviar">Enviar</button>
                 </div>
 
             </form>
@@ -202,12 +202,10 @@
         </div>
     </div>
 
-
     <!--footer-->
     <footer class="footer-distributed" id="footer">
 
         <div class="footer-left">
-
             <h3>Masc<span><img src="/img/footprint.png" style="width: 25px"></span>ticas</h3>
 
             <p class="footer-links">
@@ -220,7 +218,6 @@
                 <a href="landingPage.html#linkDonaciones">Donaciones</a>
 
                 <a href="landingPage.html#linkPublicar">Proceso de publicación</a>
-
             </p>
 
             <p class="footer-company-name">Mascoticas © 2022</p>
@@ -249,11 +246,12 @@
 
             <p class="footer-company-about">
                 <span>NUESTRAS REDES</span>
-                Te invitamos a seguirnos en nuestras redes, estar pendiente de todas nuestras publicaciones y ser
-                parte de nuestra comunidad.
+                Te invitamos a seguirnos en nuestras redes, estar pendiente de todas nuestras publicaciones y ser parte
+                de nuestra comunidad.
             </p>
 
             <div class="footer-icons">
+
                 <a href="https://www.twitter.com" target="_blank"><img src="/img/social_Twitter_1776.png" alt="Twitter"
                         width="40" height="40" class="footer-icons d-inline-block"></a>
                 <a href="https://www.facebook.com" target="_blank"><img src="/img/social_facebook_1786.png"
@@ -268,8 +266,9 @@
 
     </footer>
 
+
     <!--Scripts-->
-    <script src="publicarME.js"> </script>
+    <script src="/public/js/App.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>

@@ -9,7 +9,7 @@
     <link rel="icon" type="image/ico" href="/img/logo.png" title="favicon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="\Estilos\estilos.css">
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 
 <body>
@@ -67,7 +67,7 @@
 
     <!--Cabecera-->
     <div class="container-fluid p-4  pb-5 bg-gradient bg-opacity-25 text-black-50 text-center" id="cabecera">
-        <h1 class="mb-3 mt-5" id="textCabecera">MASCOTAS PERDIDAS</h1>
+        <h1 class="mb-3 mt-5" id="textCabecera">MASCOTAS ENCONTRADAS</h1>
 
     </div>
 
@@ -76,41 +76,43 @@
         <div class="row">
             <div class=" col-md-2 card text-center border-bottom-0 border-top-0 border-0  g-3">
                 <h6 class="card-title" style="text-align: left"><strong>Filtrar busqueda por:</strong></h6>
-                <ul style="list-style-type: none; text-align: left">
-                    <li>
-                        <label for="especie" class="form-label">Especie</label>
-                        <select name="especie" id="especie" class="form-select">
-                            <option selected>Seleccionar</option>
-                            <option value="1">Perro</option>
-                            <option value="2">Gato</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="raza" class="form-label">Raza</label>
-                        <select name="raza" id="raza" class="form-select">
-                            <option selected>seleccionar</option>
-                            <option value="1">Labrador</option>
-                            <option value="2">Alaskan malamute</option>
-                            <option value="3">Chow chow</option>
-                            <option value="4">Samolledo</option>
-                            <option value="5">Pastor ovejero</option>
-                            <option value="6">Schnauzer</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="sexo" class="form-label">Sexo</label>
-                        <select name="sexo" id="sexo" class="form-select">
-                            <option selected>seleccionar</option>
-                            <option value="1">Hembra</option>
-                            <option value="2">Macho</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="ciudad" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="ciudad" name="ciudad">
-                    </li>
-                </ul>
-                <button type="submit" class="botonFiltro">Aplicar filtro</button>
+                <form method="get" action="">
+                    <ul style="list-style-type: none; text-align: left">
+                        <li>
+                            <label for="especie" class="form-label">Especie</label>
+                            <select name="especie" id="especie" class="form-select">
+                                <option selected>Seleccionar</option>
+                                <option value="1">Perro</option>
+                                <option value="2">Gato</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="raza" class="form-label">Raza</label>
+                            <select name="raza" id="raza" class="form-select">
+                                <option selected>seleccionar</option>
+                                <option value="1">Labrador</option>
+                                <option value="2">Alaskan malamute</option>
+                                <option value="3">Chow chow</option>
+                                <option value="4">Samolledo</option>
+                                <option value="5">Pastor ovejero</option>
+                                <option value="6">Schnauzer</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="sexo" class="form-label">Sexo</label>
+                            <select name="sexo" id="sexo" class="form-select">
+                                <option selected>seleccionar</option>
+                                <option value="1">Hembra</option>
+                                <option value="2">Macho</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad" name="ciudad">
+                        </li>
+                    </ul>
+                    <button type="submit" class="botonFiltro">Aplicar filtro</button>
+                </form>
             </div>
             <div class="col-md-1">
             </div>
@@ -139,7 +141,7 @@
                         <div>
                             <textarea name="descripcion" id="descripcion" rows="2" cols="70"
                                 class="text-info"></textarea><br>
-                            <p style=" display: inline"><strong>Contacto: </span>310 0000000</strong></p>
+                            <p style=" display: inline"><strong>Contacto: </span>310000 000 </strong></p>
                             <br><br>
                         </div>
                         <div>
@@ -157,13 +159,9 @@
         </div>
     </div>
 
-
     <!--footer-->
-
     <footer class=" footer-distributed" id="footer">
-
         <div class="footer-left">
-
             <h3>Masc<span><img src="/img/footprint.png" style="width: 25px"></span>ticas</h3>
 
             <p class="footer-links">
@@ -176,36 +174,34 @@
                 <a href="landingPage.html#linkDonaciones">Donaciones</a>
 
                 <a href="landingPage.html#linkPublicar">Proceso de publicación</a>
-
             </p>
-
-            <p class="footer-company-name">Mascoticas © 2022</p>
+            <p class="footer-company-name">Mascoticas © 2022
+            </p>
         </div>
 
         <div class="footer-center">
-
             <div>
                 <i class="fa fa-map-marker"></i>
-                <p><span><b>CONTACTO</b></span> Bogotá, Colombia</p>
+                <p><span><b>CONTACTO</b></span> Bogotá,
+                    Colombia</p>
             </div>
-
             <div>
                 <i class="fa fa-phone"></i>
                 <p>+57 310 00 0000</p>
             </div>
-
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">mascoticas@gmail.com</a></p>
+                <p><a href="mailto:support@company.com">mascoticas@gmail.com</a>
+                </p>
             </div>
-
         </div>
 
         <div class="footer-right">
-
             <p class="footer-company-about">
                 <span>NUESTRAS REDES</span>
-                Te invitamos a seguirnos en nuestras redes, estar pendiente de todas
+                Te invitamos a seguirnos en nuestras redes,
+                estar pendiente de
+                todas
                 nuestras
                 publicaciones y ser parte
                 de nuestra comunidad.
@@ -219,15 +215,12 @@
                         alt="facebook" width="40" height="40" class="footer-icons d-inline-block"></a>
                 <a href="https://www.instagram.com" target="_blank"><img src="/img/social_instagram_1783.png"
                         alt="Instagram" width="40" height="40" class="footer-icons d-inline-block"></a>
-
-
             </div>
-
         </div>
-
     </footer>
 
     <!--scripts-->
+    <script src="/public/js/App.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
         </script>
