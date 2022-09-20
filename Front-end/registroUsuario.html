@@ -59,19 +59,19 @@
 
     <!--Cabecera-->
     <div class="container-fluid p-4  pb-5 bg-gradient bg-opacity-25 text-black-50 text-center" id="cabecera">
-        <h1 class="mb-3 mt-5" id="textCabecera">Inicio de sesión</h1>
+        <h1 class="mb-3 mt-5" id="textCabecera">Registro de usuario</h1>
 
     </div>
 
     <!--Cuerpo-->
-    <section class="vh-100" style="background-color: #5692a6">
+    <section class="vh-100" style="background-color: #5692a6" id="sectionRegistrarU">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-xl-9">
-                    <div class="card" style="border-radius: 1rem;">
+                    <div class="card " style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="/img/Login.jpg" alt="login form" class="img-fluid"
+                                <img src="/img/RegistroUsuario.jpg" alt="login form" class="img-fluid"
                                     style="border-radius: 1rem 0 0 1rem;"" />
                   </div>
                   <div class=" col-md-6 col-lg-7 d-flex align-items-center">
@@ -79,7 +79,8 @@
 
                                     <form id="registroUser">
                                         <!--DATOS DEL usuario-->
-                                        <h1 style="text-align:center"><strong>Datos del usuario</strong></h1>
+                                        <h4 style="text-align:center"><strong>Formulario de registro</strong></h4>
+                                        <hr>
                                         <div class="row">
                                             <div class="col-6">
                                                 <label for="MEpnombre" class="form-label">Primer nombre</label>
@@ -132,6 +133,9 @@
                                                 <label for="MEclave" class="form-label">Contraseña</label>
                                                 <input type="password" class="form-control" id="MEclave" name="MEclave"
                                                     required>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <button type="submit" class="boton-enviar" id="btnenviar">Enviar</button>
                                             </div>
                                         </div>
                                     </form>
