@@ -225,7 +225,9 @@ section {
   text-align: center;
   font-size: 22px;
   font-weight: 700;
-  text-decoration: underline;
+  text-decoration: none;
+  align-items: center;
+  place-items: center;
 }
 
 .footer-distributed{
@@ -413,4 +415,41 @@ table.infoMascotas{
     border-radius: 2px;
     border-color: navajowhite;
     align-content: center;
+}
+
+#inforegistro{
+    text-decoration: none;
+    text-decoration-color: #33383b;
+}
+
+section#sectionCrearP{
+    font-weight: 10px;
+    font-size: 18px;
+}
+
+button.boton-enviar{
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    width: 95px;
+    height: 45px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    background: #a9fed7;
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+}
+
+button.boton-enviar:hover{
+    background-color: black;
+    color: white;;
 }
