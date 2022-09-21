@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascoticas</title>
+    <link rel="icon" type="image/ico" href="/img/logo.png" title="favicon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-nav navbar-expand-sm bg-gradient bg-light text-black p-3 mx-auto"> <button
+        class="navbar-toggler" type="button" data-target="#navigation"> <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="figure-img">
+        <a class="figure-img" href="landingPage.html">
+            <img src="/img/logo.png" alt="" width="50" height="50" class=" align-content-center">
+        </a>
+    </div>
+
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="landingPage.html#linkNosotros" class="nav-link p-3">Nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a href="landingPage.html#linkContacto" class="nav-link p-3">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+            <a href="landingPage.html#linkDonaciones" class="nav-link p-3">Donaciones</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle p-3" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Mascotas
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="verPublicaciones.html">Ver publicaciones</a></li>
+                <li><a class="dropdown-item" href="crearPublicacion.html">Crear publicación</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="landingPage.html#linkPublicar">Proceso para publicar</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="registroUsuario.html" class="nav-link p-3">Registrarse</a>
+        </li>
+        <li class="nav-item">
+            <a href="login.html" class="nav-link p-3">Iniciar sesión</a>
+        </li>
+    </ul>
+</nav>
+
+    <!--Cabecera-->
+    <div class="container-fluid p-4  pb-5 bg-gradient bg-opacity-25 text-black-50 text-center" id="cabecera">
+        <h1 class="mb-3 mt-5" id="textCabecera">MASCOTAS ENCONTRADAS</h1>
+
+    </div>
+
+    <!--Cuerpo-->
+    <div class="container pt-3 table">
+        <div class="row">
+            <div class=" col-md-2 card text-center border-bottom-0 border-top-0 border-0  g-3">
+                <h6 class="card-title" style="text-align: left"><strong>Filtrar busqueda por:</strong></h6>
+                <form method="get" action="">
+                    <ul style="list-style-type: none; text-align: left">
+                        <li>
+                            <label for="especie" class="form-label">Especie</label>
+                            <select name="especie" id="especie" class="form-select">
+                                <option selected>Seleccionar</option>
+                                <option value="1">Perro</option>
+                                <option value="2">Gato</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="raza" class="form-label">Raza</label>
+                            <select name="raza" id="raza" class="form-select">
+                                <option selected>seleccionar</option>
+                                <option value="1">Labrador</option>
+                                <option value="2">Alaskan malamute</option>
+                                <option value="3">Chow chow</option>
+                                <option value="4">Samolledo</option>
+                                <option value="5">Pastor ovejero</option>
+                                <option value="6">Schnauzer</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="sexo" class="form-label">Sexo</label>
+                            <select name="sexo" id="sexo" class="form-select">
+                                <option selected>seleccionar</option>
+                                <option value="1">Hembra</option>
+                                <option value="2">Macho</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad" name="ciudad">
+                        </li>
+                    </ul>
+                    <button type="submit" class="botonFiltro">Aplicar filtro</button>
+                </form>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center" style="background-color: #dddd">
+                    <img src="/img/icon-grey-photo.jpg" id="mascotaFoto" alt="imagen" class="card-img-top rounded-2">
+                    <div class="card-body bg-gradient" style="background-color: #dddd">
+                        <div>
+                            <table class="table table-striped text-center">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Raza</th>
+                                    <th>Sexo</th>
+                                    <th>Ciudad</th>
+                                    <th>Estado</th>
+                                </tr>
+                                <tr>
+                                    <td>Paco</td>
+                                    <td>Chow chow</td>
+                                    <td>Macho</td>
+                                    <td>Bogotá</td>
+                                    <td>Desaparecido</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <textarea name="descripcion" id="descripcion" rows="2" cols="70"
+                                class="text-info"></textarea><br>
+                            <p style=" display: inline"><strong>Contacto: </span>310000 000 </strong></p>
+                            <br><br>
+                        </div>
+                        <div>
+                            <a href="#" class="botonPubli">Editar</a>
+                            <a href="#" class="botonPubli">Eliminar </a>
+                            <a href="#" class="botonPubli">Actualizar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class=" footer-distributed" id="footer">
+        <div class="footer-left">
+            <h3>Masc<span><img src="/img/footprint.png" style="width: 25px"></span>ticas</h3>
+
+            <p class="footer-links">
+                <a href="landingPage.html" class="link-1">Inicio</a>
+
+                <a href="landingPage.html#linkNosotros">Nosotros</a>
+
+                <a href="">Alianzas</a>
+
+                <a href="landingPage.html#linkDonaciones">Donaciones</a>
+
+                <a href="landingPage.html#linkPublicar">Proceso de publicación</a>
+            </p>
+            <p class="footer-company-name">Mascoticas © 2022
+            </p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span><b>CONTACTO</b></span> Bogotá,
+                    Colombia</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+57 310 00 0000</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">mascoticas@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>NUESTRAS REDES</span>
+                Te invitamos a seguirnos en nuestras redes,
+                estar pendiente de
+                todas
+                nuestras
+                publicaciones y ser parte
+                de nuestra comunidad.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.twitter.com" target="_blank"><img src="/img/social_Twitter_1776.png" alt="Twitter"
+                        width="40" height="40" class="footer-icons d-inline-block"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="/img/social_facebook_1786.png"
+                        alt="facebook" width="40" height="40" class="footer-icons d-inline-block"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="/img/social_instagram_1783.png"
+                        alt="Instagram" width="40" height="40" class="footer-icons d-inline-block"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--scripts-->
+    <script src="/public/js/App.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

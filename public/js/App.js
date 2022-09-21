@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded',()=>{
 
-    console.log('hellowworld');
+    const MPpnombre = document.querySelector("#MPpnombre")
+    console.log(MPpnombre)
 })
 
