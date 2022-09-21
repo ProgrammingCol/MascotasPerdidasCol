@@ -1,20 +1,33 @@
+#se importan librerias a utilizar sha256 para proteger contraseñas, conectar para hacer conexion a base de datos, 
+#error para manejo de errores y datetime para manejo de fechas
 from hashlib import sha256
 from conexion import conectar
 from mysql.connector import Error
 import datetime
 
 
-#Login y registro hechos
+#Login y registro
 def auth(email,password):
     '''audita a una persona, devuelve un id y token si funciona, None si no'''
+    # ejecuta el codigo en un try-except para manejo de errores
     try:
+        # prepara la peticion a la base de datos
         query = """SELECT id_usuario , token
         FROM usuario
         WHERE correo = %s AND token = %s"""
+        
+        # Se utiliza el with para abrir y cerrar conexion con BD.
         with conectar() as conn:
+            # se crea cursor para ejecutar las peticiones
             cursor = conn.cursor(dictionary=True)
+            
+            # se realiza ocultamiento de contrasena
             password = sha256(password.encode('utf-8')).hexdigest()
+            
+            # Se ejecuta la peticion
             cursor.execute(query,[email,password])
+            
+            # Se maneja la respuesta dependiendo de su valor
             respuesta = cursor.fetchone()
             if respuesta: return respuesta
             else: return cursor.fetchone()
@@ -199,5 +212,5 @@ def listar_mascotas():
 
     
 # registrar_usuario('maria del pilar','cardozo','galvis','3187412133','mpcardozo2004@yahoo.es','maria123','1')
-# print(auth('mpcardozo2004@yahoo.es','maria123'))
+print(auth('mpcardozo2004@yahoo.es','maria123'))
 # print(modificar_contraseña(1,'maria456','maria123')).
