@@ -426,6 +426,7 @@ table.infoMascotas{
 section#sectionCrearP{
     font-weight: 10px;
     font-size: 16px;
+    text-align: left;
 }
 
 button.boton-enviar{
@@ -445,7 +446,7 @@ button.boton-enviar{
     transition: all ease 0.5s;
     background: #a9fed7;
     border: none;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0px;
     padding-top: 3px;
 }
@@ -463,6 +464,6 @@ section#sectionRegistrarU{
 }
 
 button.boton-enviarU#btnenviar{
-    margin-top: 50%;
-    margin-bottom: 5px;;
+    margin-top: 50px;
+    margin-bottom: 10px;;
 }

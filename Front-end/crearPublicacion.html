@@ -64,30 +64,25 @@
 
     <!--formulario-->
     <section class="vh-100  mt-4 mb-4 " style="background-color: #5692a6" id="sectionCrearP" >
-        <div class="container  py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="container  py-5 h-100" style="height:100%">
+            <div class="row d-flex justify-content-center align-items-left h-100"  >
                 <div class="col col-xl-9">
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
                                 <img src="/img/RegistroMascota.jpg" alt="register pet form" class="img-fluid" style="height:100%; border-radius: 1rem 0 0 1rem;"" />
                             </div>
-                            <div class=" col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class=" col-md-6 col-lg-7 d-flex align-items-left">
                             <div class="card-body p-4 p-lg-5">
                                     <form method="get" action="" class="row class g-3">
 
                                         <!--DATOS DE LA MASCOTA-->
-                                        <div class="col-sm-12">
-                                            <h5 tyle="text-align:center"><strong>Datos de la
-                                                    mascota </strong></h5><br>
-                                        </div>
-
-                                        <div class="col-sm-3">
-                                            <label for="nombrem" class="form-label">Nombre</label>
+                                            <div class="col-sm-6">
+                                            <label for="nombrem" class="form-label">Nombre de la Mascota</label>
                                             <input type="text" class="form-control" id="nombrem" name="nombrem"
                                                 required>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-6">
                                             <label for="especie" class="form-label" required>Especie</label>
                                             <select name="especie" id="especie" class="form-select">
                                                 <option selected="seleccionar">seleccionar</option>
@@ -95,7 +90,7 @@
                                                 <option value="2">Gato</option>
                                             </select>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <label for="raza" class="form-label" required>Raza</label>
                                             <select name="raza" id="raza" class="form-select">
                                                 <option selected>seleccionar</option>
@@ -107,7 +102,7 @@
                                                 <option value="6">Schnauzer</option>
                                             </select>
                                         </div>
-                                        <div class="col-sm-3">
+                                        <div class="col-sm-4">
                                             <label for="sexo" class="form-label" required>Sexo</label>
                                             <select name="sexo" id="sexo" class="form-select">
                                                 <option selected>seleccionar</option>
@@ -115,10 +110,17 @@
                                                 <option value="2">Macho</option>
                                             </select>
                                         </div>
-
+                                        <div class="col-sm-4">
+                                            <label for="sexo" class="form-label" required>Estado</label>
+                                            <select name="sexo" id="sexo" class="form-select">
+                                                <option selected>seleccionar</option>
+                                                <option value="1">Perdida</option>
+                                                <option value="2">Encontrada</option>
+                                            </select>
+                                        </div>
                                         <div class="col-md-12">
                                             <label for="descripcion" class="form-label">Descripción</label>
-                                            <textarea name="descripcion" id="descripcion" rows="4"
+                                            <textarea name="descripcion" id="descripcion" rows="3"
                                                 class="form-control"
                                                 placeholder="Escriba las características de la mascota"
                                                 required></textarea>
