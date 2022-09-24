@@ -7,7 +7,7 @@ import datetime
 
 
 #Login y registro
-def auth(email,password):
+def auth(email,password):#
     '''audita a una persona, devuelve un id y token si funciona, None si no'''
     # ejecuta el codigo en un try-except para manejo de errores
     try:
@@ -97,18 +97,18 @@ def modificar_contraseña(id: int,token: str,new_password: str):
             return bool(cursor.rowcount)
     except Error as e:
         return [False,e]
-    
-def registrar_mascota(nombre: str,raza: str,sexo: str,estado: str,especie: str,descripcion: str,ciudad: str,id_usuario: int,ubicacion_foto: str):
+
+def registrar_mascota(nombre: str,raza: str,sexo: str,estado: str,especie: str,descripcion: str,ciudad: str,id_usuario: int,ubicacion_foto: str): #
     ''''adquiere los datos de una mascota encontrada/perdida y la almacena en base de datos'''
     try: 
         #Se construye la peticion a la base de datos.
         query = """INSERT INTO mascota VALUES (null,%s,%s,%s,%s,%s,%s,%s,%s,%s)
                     """
         #Se inician los valores para la peticion
-        raza = f"(SELECT id_raza FROM raza WHERE raza = {raza})"
-        sexo = f"(SELECT id_sexo FROM sexo WHERE sexo = {sexo})"
-        ciudad = f"(SELECT idciudad FROM ciudad WHERE ciudad = {ciudad})"
-        especie = f"(SELECT id_especie FROM especie WHERE especie = {especie})"
+        raza = f"(SELECT id_raza FROM raza WHERE raza ilike {raza})"
+        sexo = f"(SELECT id_sexo FROM sexo WHERE sexo ilike {sexo})"
+        ciudad = f"(SELECT idciudad FROM ciudad WHERE ciudad ilike {ciudad})"
+        especie = f"(SELECT id_especie FROM especie WHERE especie ilike {especie})"
         foto_binaria = to_binary(ubicacion_foto)
         
         values = [raza,sexo,nombre,descripcion,foto_binaria,estado,id_usuario,ciudad,especie]
@@ -212,5 +212,7 @@ def listar_mascotas():
 
     
 # registrar_usuario('maria del pilar','cardozo','galvis','3187412133','mpcardozo2004@yahoo.es','maria123','1')
-print(auth('mpcardozo2004@yahoo.es','maria123'))
+# permiso = auth('mpcardozo2004@yahoo.es','maria123')
 # print(modificar_contraseña(1,'maria456','maria123')).
+
+

@@ -155,10 +155,15 @@ ul.navega li {
     margin-top: 25px;
 }
 
+.boxPublicar{
+    height: 400px;
+    width: 100%;
+}
 
-div#cabecera {
+navbar-nav mx-auto#cabecera {
     background-color: #fed7a9;
     height: 200px;
+    width: 100%;
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
