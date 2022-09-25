@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mascoticas</title>
-    <link rel="icon" type="image/ico" href="../img/logo.png" title="favicon">
+    <link rel="icon" type="image/ico" href="img/logo.png" title="favicon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="css/General.css">
@@ -68,79 +68,76 @@
     </nav>
 
     <!--Cuerpo-->
-    <section class="vh-100" style="background-color: #5692a6" id="sectionRegistrarU">
+    <section id="sectionRegistrarUser">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col col-xl-9">
-                    <div class="card " style="border-radius: 1rem;">
-                        <div class="row g-0">
+                    <div class="card " id="usuarioForm1">
+                        <div class="row g-0" id="usuarioForm2">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="../img/RegistroUsuario.jpg" alt="login form" class="img-fluid"
-                                    style="border-radius: 1rem 0 0 1rem;"" />
+                                <img src="img/RegistroUsuario.jpg" alt="login form" class="img-fluid"
+                                    id="imgregistroUser">
                   </div>
                   <div class=" col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
 
                                     <form id="registroUser">
                                         <!--DATOS DEL usuario-->
-                                        <h4 style="text-align:center"><strong>Formulario de registro</strong></h4>
-                                        <hr>
-                                        <div class="row">
+                                        <h3 id="titleFormUser">Formulario de registro</h3>
+                                        <div class="row g-3">
                                             <div class="col-6">
-                                                <label for="MEpnombre" class="form-label">Primer nombre</label>
-                                                <input type="text" class="form-control" id="MEpnombre" name="MEpnombre"
+                                                <label for="pnombre" class="form-label">Primer nombre</label>
+                                                <input type="text" class="form-control" id="pnombre" name="pnombre"
                                                     required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="MEsnombre" class="form-label">Segundo nombre</label>
-                                                <input type="text" class="form-control" id="MEsnombre" name="MEsnombre"
+                                                <label for="snombre" class="form-label">Segundo nombre</label>
+                                                <input type="text" class="form-control" id="snombre" name="snombre"
                                                     required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="MEpapellido" class="form-label">Primer apellido</label>
-                                                <input type="text" class="form-control" id="MEpapellido"
-                                                    name="MEpapellido" required>
+                                                <label for="papellido" class="form-label">Primer apellido</label>
+                                                <input type="text" class="form-control" id="papellido"
+                                                    name="papellido" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="MEsapellido" class="form-label">Segundo apellido</label>
-                                                <input type="text" class="form-control" id="MEsapellido"
-                                                    name="MEsapellido" required>
+                                                <label for="sapellido" class="form-label">Segundo apellido</label>
+                                                <input type="text" class="form-control" id="sapellido"
+                                                    name="sapellido" required>
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="MEcorreo" class="form-label">Correo Electrónico</label>
-                                                <input type="mail" class="form-control" id="MEcorreo" name="MEcorreo"
+                                                <label for="correo" class="form-label">Correo Electrónico</label>
+                                                <input type="mail" class="form-control" id="correo" name="correo"
                                                     required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="MEtelefono" class="form-label">Teléfono</label>
-                                                <input type="text" class="form-control" id="MEtelefono"
-                                                    name="MEtelefono" required>
+                                                <label for="telefono" class="form-label">Teléfono</label>
+                                                <input type="text" class="form-control" id="telefono"
+                                                    name="telefono" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="MEciudad" class="form-label">Ciudad</label>
-                                                <input type="text" class="form-control" id="MEciudad" name="MEciudad"
+                                                <label for="ciudad" class="form-label">Ciudad</label>
+                                                <input type="text" class="form-control" id="ciudad" name="ciudad"
                                                     required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="MEdepartamento" class="form-label">Departamento</label>
-                                                <input type="text" class="form-control" id="MEdepartamento"
+                                                <label for="departamento" class="form-label">Departamento</label>
+                                                <input type="text" class="form-control" id="departamento"
                                                     name="MEdepartamento" required>
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="MEidusuario" class="form-label">Usuario</label>
-                                                <input type="text" class="form-control" id="MEidusuario"
-                                                    name="MEidusuario" required>
+                                                <label for="idusuario" class="form-label">Usuario</label>
+                                                <input type="text" class="form-control" id="idusuario"
+                                                    name="idusuario" required>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="MEclave" class="form-label">Contraseña</label>
-                                                <input type="password" class="form-control" id="MEclave" name="MEclave"
+                                                <label for="crearClave" class="form-label">Contraseña</label>
+                                                <input type="password" class="form-control" id="crearClave" name="crearClave"
                                                     required>
                                             </div>
-                                            <div class="col-md-12">
-                                                <button type="submit" class="boton-enviar" id="btnenviar">Enviar</button>
-                                            </div>
+                                            <button type="submit" class="boton-enviar" id="btnRegistro">Enviar</button> 
                                         </div>
                                     </form>
 

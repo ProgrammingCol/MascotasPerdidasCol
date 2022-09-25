@@ -32,12 +32,12 @@ section#sectionCrearP{
 
 
 
-#titleform{
-    font-size: 22px;
+#titleform1{
+    font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-shadow: 5px 5px 5px #fed7a9;
 }
 
@@ -47,7 +47,7 @@ section#sectionCrearP{
 }
 
 
-button.boton-enviar{
+button#btnCrearPubli{
     position: relative;
     display: inline-block;
     border-radius: 6px;
@@ -69,7 +69,7 @@ button.boton-enviar{
     padding-top: 3px;
 }
 
-button.boton-enviar:hover{
+button#btnCrearPubli:hover{
     background-color: black;
     color: white;;
 }
