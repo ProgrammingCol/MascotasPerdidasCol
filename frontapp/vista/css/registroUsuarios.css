@@ -30,6 +30,10 @@
     transition: 0.2s
 }
 
+#logonav{
+    padding: 5px;
+}
+
 body {
     background-color: white;
 }
@@ -204,7 +208,6 @@ h1#textCabecera {
     box-sizing: border-box;
     width: auto;
     height: 100%;
-    margin-top: 60px;
     margin-bottom: 0px;
     font: bold 17px sans-serif;
     font-size: 17px;
@@ -431,6 +434,7 @@ section#sectionCrearP{
     font-size: 16px;
     text-align: left;
     
+    
 }
 
 button.boton-enviar{
@@ -478,4 +482,6 @@ button.boton-enviarU#btnenviar{
         display: none;
     }
 }
+
+
 

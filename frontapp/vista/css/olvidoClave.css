@@ -1,0 +1,78 @@
+
+/*paleta de colores: broken dreamcicle  url: https://www.color-hex.com/color-palettes/?keyword=broken+dreamcicle*/
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+
+section#sectionRecuperar{
+    background: #fed7a9;
+    font-weight: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    text-align: left;
+    height: fit-content;
+    background-color: #5692a6;
+    align-items: center;
+    place-items: center;
+}
+
+#recuform1{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
+
+#titleform3{
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-shadow: 5px 5px 5px #fed7a9;
+}
+
+#recuFormImg{
+    height:100%; 
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+
+button#btnRecuperar{
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    width: auto;
+    height: 35px;
+    color:white;
+    background-color:#5692a6 ;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-top: px;
+}
+
+button#btnRecuperar:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
