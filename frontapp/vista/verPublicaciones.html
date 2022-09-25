@@ -16,7 +16,7 @@
 
     <!--Navbar-->
     <nav id="navFixed" class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-10px">
-        <a class="navbar-brand " href="index.html"><small></small></a>
+        <a class="navbar-brand " href="index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -67,111 +67,154 @@
     </nav>
 
     <!--Cuerpo-->
-    <section id="sectionVerPubli">
-        <div class="card-group">
-            <div class="row" id="verPubliDiv1">
-                <div class=" col-md-2 card text-center border-bottom-0 border-top-0 border-0  g-4" id="verPubliFilter">
-                    <h6 class="card-title">Filtrar busqueda por:</h6>
-                    <form method="get" action="">
+    <section class="container" id="sectionVerpubli">
+        <div class="row ">
+
+            <!--Seccion de filtrar busqueda-->
+            <div class="col-md-3" id="filterDiv">
+
+                <form method="get" action="">
+                    <div id="filtrar" class="card g-3">
+                        <h6 id="titleFilter">Filtrar busqueda por:</h6>
                         <ul style="list-style-type: none; text-align: left">
                             <li>
-                                <label for="especie" class="form-label">Especie</label>
-                                <select name="especie" id="especie" class="form-select">
+                                <label for="filtroEspecie" class="form-label">Especie</label>
+                                <select name="filtroEspecie" id="filtroEspecie" class="form-select">
                                     <option selected>Seleccionar</option>
                                     <option value="1">Perro</option>
                                     <option value="2">Gato</option>
                                 </select>
                             </li>
                             <li>
-                                <label for="raza" class="form-label">Raza</label>
-                                <select name="raza" id="raza" class="form-select">
+                                <label for="filtroRaza" class="form-label">Raza</label>
+                                <select name="filtroRaza" id="filtroRaza" class="form-select">
                                     <option selected>seleccionar</option>
                                 </select>
                             </li>
                             <li>
-                                <label for="sexo" class="form-label">Sexo</label>
-                                <select name="sexo" id="sexo" class="form-select">
+                                <label for="filtroSexo" class="form-label">Sexo</label>
+                                <select name="filtroSexo" id="filtroSexo" class="form-select">
                                     <option selected>seleccionar</option>
                                     <option value="1">Hembra</option>
                                     <option value="2">Macho</option>
                                 </select>
                             </li>
                             <li>
-                                <label for="ciudad" class="form-label">Ciudad</label>
-                                <input type="text" class="form-control" id="ciudad" name="ciudad">
+                                <label for="filtroCiudad" class="form-label">Ciudad</label>
+                                <input type="text" class="form-control" id="filtroCiudad" name="filtroCiudad">
                             </li>
                         </ul>
-                        <button type="submit" class="botonFiltro">Aplicar filtro</button>
-                    </form>
-                </div>
+                        <button type="submit" class="botonFiltro" id="btnFiltrar">Aplicar filtro</button>
+                    </div>
+                </form>
+            </div>
 
-                <div class="col-md-10" verPublicards>
-                    <div class="row">
-                        <div class="column">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-                                    </div>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h1>John Doe</h1>
-                                    <p>Architect & Engineer</p>
-                                    <p>We love that guy</p>
-                                </div>
+            <!--Seccion de publicaiones-->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="colum flip-card">
+                        <div class="card text-center flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image1.jpg" alt="imagen1" class="zoomA">
+                            </div>
+                            <div id="iconos" class="card-text">
+                                <img src="img/lupa.png" class="iconsimg"><img src="img/correo.png"  class="iconsimg"></span>
+                            </div>
+                            <a href="#" class="btn btn-primary" id="contactar">Zoom</a>
+                            <a href="#" class="btn btn-primary" id="contactar">Información</a>
+                            <a href="#" class="btn btn-primary" id="contactar">Contactar</a>
+                            <a href="#" class="btn btn-primary" id="contactar">Editar</a>
+                            <a href="#" class="btn btn-primary" id="contactar">Eliminar</a>
+                            <div class="flip-card-back">
+                                <h4 class="card-title">Clases</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    aspernatur dolorum. Architecto pariatur quaerat voluptate ullam possimus tempora?
+                                    Molestiae, modi repellat. Nam amet, unde cumque fuga ratione eius optio iusto.</p>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-                                    </div>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h1>John Doe</h1>
-                                    <p>Architect & Engineer</p>
-                                    <p>We love that guy</p>
-                                </div>
+                    </div>
+                    <div class="colum flip-card">
+                        <div class="card text-center flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image1.jpg" alt="imagen1">
+                            </div>
+                            <div class="flip-card-back">
+                                <h4 class="card-title">Clases</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    aspernatur dolorum. Architecto pariatur quaerat voluptate ullam possimus tempora?
+                                    Molestiae, modi repellat. Nam amet, unde cumque fuga ratione eius optio iusto.</p>
+                                <a href="#" class="btn btn-primary" id="contactar">Contactar</a></a>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-                                    </div>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h1>John Doe</h1>
-                                    <p>Architect & Engineer</p>
-                                    <p>We love that guy</p>
-                                </div>
+                    </div>
+                    <div class="colum flip-card">
+                        <div class="card text-center flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image1.jpg" alt="imagen1">
+                            </div>
+                            <div class="flip-card-back">
+                                <h4 class="card-title">Clases</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    aspernatur dolorum. Architecto pariatur quaerat voluptate ullam possimus tempora?
+                                    Molestiae, modi repellat. Nam amet, unde cumque fuga ratione eius optio iusto.</p>
+                                <a href="#" class="btn btn-primary" id="contactar">Contactar</a></a>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-                                    </div>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h1>John Doe</h1>
-                                    <p>Architect & Engineer</p>
-                                    <p>We love that guy</p>
-                                </div>
+                    </div>
+                    <div class="colum flip-card">
+                        <div class="card text-center flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image1.jpg" alt="imagen1">
+                            </div>
+                            <div class="flip-card-back">
+                                <h4 class="card-title">Clases</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    aspernatur dolorum. Architecto pariatur quaerat voluptate ullam possimus tempora?
+                                    Molestiae, modi repellat. Nam amet, unde cumque fuga ratione eius optio iusto.</p>
+                                <a href="#" class="btn btn-primary" id="contactar">Contactar</a></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colum flip-card">
+                        <div class="card text-center flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image1.jpg" alt="imagen1">
+                            </div>
+                            <div class="flip-card-back">
+                                <h4 class="card-title">Clases</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    aspernatur dolorum. Architecto pariatur quaerat voluptate ullam possimus tempora?
+                                    Molestiae, modi repellat. Nam amet, unde cumque fuga ratione eius optio iusto.</p>
+                                <a href="#" class="btn btn-primary" id="contactar">Contactar</a></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colum flip-card">
+                        <div class="card text-center flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="image1.jpg" alt="imagen1">
+                            </div>
+                            <div class="flip-card-back">
+                                <h4 class="card-title">Clases</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                                    aspernatur dolorum. Architecto pariatur quaerat voluptate ullam possimus tempora?
+                                    Molestiae, modi repellat. Nam amet, unde cumque fuga ratione eius optio iusto.</p>
+                                <a href="#" class="btn btn-primary" id="contactar">Contactar</a></a>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
     </section>
 
+
+
     <!--footer-->
-    <footer class=" footer-distributed" id="footer">
+    <footer class="footer-distributed" id="footer">
+
         <div class="footer-left">
+
             <h3>Masc<span><img src="img/footprint.png" style="width: 25px"></span>ticas</h3>
 
             <p class="footer-links">
@@ -185,35 +228,34 @@
 
                 <a href="index.html#linkPublicar">Proceso de publicación</a>
             </p>
-            <p class="footer-company-name">Mascoticas © 2022
-            </p>
+
+            <p class="footer-company-name">Mascoticas © 2022</p>
         </div>
 
         <div class="footer-center">
+
             <div>
                 <i class="fa fa-map-marker"></i>
-                <p><span><b>CONTACTO</b></span> Bogotá,
-                    Colombia</p>
+                <p><span><b>CONTACTO</b></span> Bogotá, Colombia</p>
             </div>
+
             <div>
                 <i class="fa fa-phone"></i>
                 <p>+57 310 00 0000</p>
             </div>
+
             <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">mascoticas@gmail.com</a>
-                </p>
+                <p><a href="mailto:support@company.com">mascoticas@gmail.com</a></p>
             </div>
+
         </div>
 
         <div class="footer-right">
+
             <p class="footer-company-about">
                 <span>NUESTRAS REDES</span>
-                Te invitamos a seguirnos en nuestras redes,
-                estar pendiente de
-                todas
-                nuestras
-                publicaciones y ser parte
+                Te invitamos a seguirnos en nuestras redes, estar pendiente de todas nuestras publicaciones y ser parte
                 de nuestra comunidad.
             </p>
 
@@ -223,11 +265,16 @@
                         width="40" height="40" class="footer-icons d-inline-block"></a>
                 <a href="https://www.facebook.com" target="_blank"><img src="img/social_facebook_1786.png"
                         alt="facebook" width="40" height="40" class="footer-icons d-inline-block"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="Img/social_instagram_1783.png"
+                <a href="https://www.instagram.com" target="_blank"><img src="img/social_instagram_1783.png"
                         alt="Instagram" width="40" height="40" class="footer-icons d-inline-block"></a>
+
+
             </div>
+
         </div>
+
     </footer>
+
 
     <!--scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
