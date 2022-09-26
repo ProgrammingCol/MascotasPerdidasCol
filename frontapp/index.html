@@ -10,7 +10,7 @@
     <link rel="icon" type="image/ico" href="vista/img/logo.png" title="favicon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="vista/css/indexEstilos.css">
+    <link rel="stylesheet" href="css/indexEstilos.css">
 
 </head>
 
@@ -19,41 +19,61 @@
     <!-- Contenedor Header -->
     <header id="linkHome">
         <nav id="navFixed" class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-10px">
-            <a class="navbar-brand" href="#linkHome">Mascoticas<small>.</small></a>
+            <a class="navbar-brand " href="index.html"><small></small></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link scroll current" href="#linkHome">Home</a>
+                        <a href="index.html#linkNosotros" class="nav-link scroll current">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkNosotros">Nosotros</a>
+                        <a href="index.html#linkFooter" class="nav-link scroll current">Contáctanos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="vista/crearPublicacion.html">Publica tu mascota</a>
+                        <a href="index.html#linkDonaciones" class="nav-link scroll current">Donaciones</a>
+                    </li>
+                    <div class="figure-img d-none d-md-block">
+                        <!-- d-none make and element dissapear-->
+                        <a class="figure-img" href="index.html">
+                            <img src="images/logo.png" alt="" width="50" height="50" class=" align-items-center"
+                                id="logonav">
+                        </a>
+                    </div>
+
+                    <li class="nav-item">
+                        <a href="registroUsuario.html" class="nav-link scroll current">Registrarse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll" href="#linkContacto">Donaciones</a>
+                        <a href="login.html" class="nav-link scroll current">Login</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link scroll current" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mascotas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="verPublicaciones.html">Ver publicaciones</a></li>
+                            <li><a class="dropdown-item" href="crearPublicacion.html">Crear publicación</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="index.html#linkPublicar">Proceso para publicar</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </nav>
 
         <div class="boxLogo">
-            <img class="imgLogoHeader" src="images/logoMascoticas.svg" alt="">
+            <img class="imgLogoHeader" src="img/logoMascoticas.svg" alt="">
         </div>
 
-        <!-- <div class="boxHeader">
-            <div class="textosHeader">
-                <a class="botonGetStarted" href="vista/login.html" rel="nofollow noopener">Log in</a>
-                <br>
-                <a class="botonGetStarted" href="vista/verPubilcaciones.html" rel="nofollow noopener">Publicaciones</a>
-            </div>
-        </div> -->
     </header>
     <!-- Fin Contenedor Header -->
 
@@ -62,22 +82,21 @@
         <!-- <a id="subir" class="icon-arrow-up scroll" href="#linkHome"></a> -->
         <!-- Sección Nosotros -->
         <section class="boxNosotros" id="linkNosotros">
-            <h3>Nosotros</h3>
-            <p>Mascoticas es una pagina sin animo de lucro que busca ser un medio por el cual encuentres a tu
-                mascota</p>
+            <h3>NOSOTROS</h3>
+            <p>Mascoticas es una página sin ánimo de lucro, cuyo objetivo es facilitar la búsqueda de mascotas. Sabemos lo importante que puede ser tu mascota para ti, por ello creamos esta página pensada en ayudar cada día más y más gente. </p>
 
-            <div  class="nosotros">
+            <div class="nosotros">
                 <div class="cardNosotros">
-                    <img src="images/logoGatuno.png" alt="">
+                    <img src="img/logoGatuno.png" alt="">
                     <h4>Corazón Gatuno</h4>
                     <p>La Fundación Corazón Gatuno ubicada en la ciudad de Cali, es una entidad sin ánimo de lucro que
                         tiene como objetivo social el amparo y defensa de los animales en condiciones de abandono.</p>
-                    <a  href="https://www.corazongatuno.org/" rel="nofollow noopener">Ir</a>
+                    <a href="https://www.corazongatuno.org/" rel="nofollow noopener">Ir</a>
                 </div>
 
 
                 <div class="cardNosotros">
-                    <img src="images/logoHuellitas.svg" alt="">
+                    <img src="img/logoHuellitas.svg" alt="">
                     <h4>Huellitas</h4>
                     <p>¿Andas en busca de un nuevo compañero? huellitas te puede ayudar con esta tarea, ¡adopta! </p>
                     <br>
@@ -85,21 +104,18 @@
                 </div>
 
                 <div class="cardNosotros">
-                    <img src="images/ChipsLogo.svg" alt="">
+                    <img src="img/ChipsLogo.svg" alt="">
                     <h4>Chips para mascotas</h4>
-                    <p>Sabemos de lo importante que puede ser tu mascota  para ti, por esta razón los chips de rastreo suelen ser la mejor opción para el adecuado cuidado  de ella.</p>
+                    <p>Sabemos de lo importante que puede ser tu mascota para ti, por esta razón los chips de rastreo
+                        suelen ser la mejor opción para el adecuado cuidado de ella.</p>
                     <a href="https://chipparamascotas.com/" target="_blank">Ir</a>
                 </div>
 
                 <div class="cardNosotros">
-                    <img src="#" alt="">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <img src="img/veterina4.png" alt="">
                     <h4>Veterinarias</h4>
                     <p>No te preocupes al buscar una veterinaria, encuentra las mejores de tu ciudad acá.</p>
-                    <a href="vista/veterinariasAliadas.html" target="_blank">Veterinarias Aliadas</a>
+                    <a href="vista/veterinariasAliadas.html" target="_blank">Ir</a>
                 </div>
 
             </div>
@@ -109,18 +125,20 @@
 
         <!-- Sección Publicacion -->
         <section class="boxPublicacion" id="linkPublicacion">
-            <h3>Publica tu mascota</h3>
+            <h3>PUBLICA TU MASCOTA</h3>
 
             <div class="publicacion">
                 <div class="imgPublicacion">
-                    <img src="images/Pasospublicacion.jpg" alt="">
+                    <img src="img/Pasospublicacion.jpg" alt="">
                 </div>
 
                 <article class="contenido">
                     <div>
-                        <a  href="vista/registroUsuario.html" rel="nofollow noopener">Registrarse</a>
+                        <a href="vista/registroUsuario.html" rel="nofollow noopener">Registrarse</a>
                         <br>
-                        <a  href="vista/crearPublicacion.html" rel="nofollow noopener">Crear publicacion</a>
+                        <a href="vista/crearPublicacion.html" rel="nofollow noopener">Crear publicacion</a>
+                        <br>
+                        <a href="vista/verPublicaciones.html" rel="nofollow noopener">Ver publicaciones</a>
                     </div>
                 </article>
 
@@ -132,28 +150,27 @@
         <!-- Sección Donaciones -->
         <section class="boxDonaciones" id="linkDonaciones">
 
-            <h3>Donaciones</h3>
+            <h3>DONACIONES</h3>
 
             <div class="donaciones">
                 <div class="imgDonaciones">
-                    <img src="images/perrogato.jpg" alt="">
+                    <img src="img/dogcat.jpg" alt="">
                 </div>
 
                 <div class="contenidoDonaciones">
-                    <p>Con tu aporte ayudas a mantener vivo este proyecto 
-                        que dia a dia crece para seguir ayudando  a mas
-                        personas y mascotas en todo el pais.</p>
-                    <ul>
+                    <p>Con tu aporte ayudas a mantener vivo este proyecto, 
+                        que día a día crece para seguir ayudando a más personas y
+                        mascotas en todo el país.</p>
+                    <ul style="list-style: none;">
                         <li>
-                            <img src="images/daviviendaLogo2.png" alt=""> 
-                            Davivienda : 789760978778
+                            <img src="img/Davivienda_logo.png" alt=""> 
+                             : 789760978778
                         </li>
                         <li>
-                            <img src="images/logo-bancolombia+(1).png" alt=""> 
-                            Bancolombia : 980948798478
+                            <img src="img/Logo_Bancolombia.png" alt=""> 
+                             : 980948798478
                         </li>
                     </ul>
-                    <!-- <a class="botonGetStarted" href="#">Learn More</a> -->
                 </div>
             </div>
 
@@ -168,7 +185,7 @@
 
         <div class="footer-left">
 
-            <img class="imgLogo" src="images/logoMascoticas.svg" alt="">
+            <img class="imgLogo" src="img/logoMascoticas.svg" alt="">
 
             <p class="footer-links">
                 <a href="Inicio" class="linkHome">Home</a>
@@ -217,10 +234,10 @@
 
                 <a href="https://www.twitter.com"><img src="vista//img/social_Twitter_1776.png" alt="Twitter" width="40"
                         height="40" class="footer-icons d-inline-block"></a>
-                <a href="https://www.facebook.com"><img src="vista//img/social_instagram_1783.png" alt="Twitter" width="40"
-                        height="40" class="footer-icons d-inline-block"></a>
-                <a href="https://www.instagram.com"><img src="vista/img/social_Twitter_1776.png" alt="Twitter" width="40"
-                        height="40" class="footer-icons d-inline-block"></a>
+                <a href="https://www.facebook.com"><img src="vista//img/social_instagram_1783.png" alt="Twitter"
+                        width="40" height="40" class="footer-icons d-inline-block"></a>
+                <a href="https://www.instagram.com"><img src="vista/img/social_Twitter_1776.png" alt="Twitter"
+                        width="40" height="40" class="footer-icons d-inline-block"></a>
 
             </div>
 
