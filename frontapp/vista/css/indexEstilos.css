@@ -104,7 +104,7 @@ header {
     position: relative; 
     background-color: #fcfcfc; 
     padding-top: 55px;
-    background-image: url('/vista/img/kitten-puppy-(1).jpg');
+    background-image: url('/prueba/images/kitten-puppy-\(1\).jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -254,11 +254,9 @@ h1#textCabecera {
 
 .cardNosotros {
     width:40vh;
-    /* height: 40vh; */
     border-radius: 6px;
     transition: 0.4s;
-    margin-bottom: 0px;
-    
+    margin-bottom: 2%
 }
 
 .cardNosotros a {
@@ -287,8 +285,8 @@ h1#textCabecera {
 
 
 .cardNosotros img {
-    width: 15vh;
-    margin:1px 0px 0px 110px;    
+    width: 40%;
+    margin: 0% 0% -2% 33%;  
 }
 
 
@@ -299,7 +297,7 @@ h1#textCabecera {
 }
 
 .cardNosotros h4 {
-    padding: 30px 0px 5px 0px;   
+    padding: 2% ;   
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -308,8 +306,9 @@ h1#textCabecera {
 .cardNosotros p {
     font-size: 14px;
     color: #000000;
+    margin: 1% 10% 1% 1%;
+    padding: 2% 2% 2% 2%;
     text-align: center;
-    margin:20px 30px 10px 10px; 
 }
 
 /* ESTILOS PUBLICACION  */
@@ -357,6 +356,7 @@ h1#textCabecera {
 .contenido {
     width: 50%;
     padding-left: 30px;
+    display: flexbox;
 }
 
 .contenido a {
@@ -389,7 +389,7 @@ h1#textCabecera {
     background-color: #ffffff;
     height: 100%; 
     position: relative;
-    background-image: url('/vista/img/pawpattern.png');
+    background-image: url('/prueba/images/pawpattern.png');
     background-size:cover;
     background-repeat: no-repeat; 
     background-attachment: local; 
@@ -434,16 +434,18 @@ h1#textCabecera {
     margin: 10% 3% 2% 3%;
     width: 100%;
     color: #000000;
-    font-size: 2.5vh;
+    font-weight: bold;
+    font-size: 23px;
 }
 .contenidoDonaciones ul  {
-    margin-top: 8vh;
+    margin-top: 20%;
 }
 
 .contenidoDonaciones img {
-    width:30%;
-    padding-bottom: 2vh;
-    margin-bottom:3%;
+    width:43%;
+    margin: 0% 2% 15% 0%;
+    padding-top: 4%;
+    
 }
 
 /* ESTILOS FOOTER*/
@@ -629,31 +631,6 @@ h1#textCabecera {
 	margin-top: 5px;
 }
 
-
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
-
-/* MEDIA QUERIES */
-
 @media screen and (max-width:800px) {
     .boxLogo {
         display: none;
@@ -772,10 +749,24 @@ h1#textCabecera {
         width: 100%;
         text-align: center;
     }
-    /* ESTILOS FOOTER */
-    .boxContacto {
-        height: 100%;
-    }
+    
+    .footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+    
 }
 
 @media screen and (max-width:400px) {
