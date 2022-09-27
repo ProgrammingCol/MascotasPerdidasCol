@@ -104,7 +104,7 @@ header {
     position: relative; 
     background-color: #fcfcfc; 
     padding-top: 55px;
-    background-image: url('/prueba/images/kitten-puppy-\(1\).jpg');
+    background-image: url('/vista/img/kitten-puppy-(1).jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -389,7 +389,7 @@ h1#textCabecera {
     background-color: #ffffff;
     height: 100%; 
     position: relative;
-    background-image: url('/prueba/images/pawpattern.png');
+    background-image: url('/vista/img/pawpattern.png');
     background-size:cover;
     background-repeat: no-repeat; 
     background-attachment: local; 
