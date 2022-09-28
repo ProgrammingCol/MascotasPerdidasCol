@@ -59,3 +59,43 @@ button#btnRegistro:hover{
     background-color: black;
     color: white;;
 }
+
+
+
+
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  input:not([type="submit"]) {
+    width: 100%;
+    border: .5px solid rgba(0, 0, 0, 0.7);
+  }
+  
+  input[type="submit"] {
+    background-color: rgb(8, 131, 92);
+    color: white;
+    font-size: 20px;
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(35, 235, 171);
+  }
+  
+  input[type="submit"]:active {
+    background-color: rgb(28, 80, 63);
+  }
+  
+  .error #emailError,
+  .error #passwordError {
+    color: red;
+  }
+  .error input {
+    border: 2px solid red;
+  }
+  
+  .msg {
+    display: none;
+  }

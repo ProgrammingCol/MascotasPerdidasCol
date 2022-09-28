@@ -81,7 +81,7 @@
                   <div class=" col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
 
-                                    <form id="registroUser">
+                                    <form id="registroUser" name="RegForm" onsubmit="return validatefields()" method="post">
                                         <!--DATOS DEL usuario-->
                                         <h3 id="titleFormUser">Formulario de registro</h3>
                                         <div class="row g-3">
@@ -89,59 +89,72 @@
                                                 <label for="pnombre" class="form-label">Primer nombre</label>
                                                 <input type="text" class="form-control" id="pnombre" name="pnombre"
                                                     required>
+                                                    <p id="pnombreError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="snombre" class="form-label">Segundo nombre</label>
                                                 <input type="text" class="form-control" id="snombre" name="snombre"
                                                     required>
+                                                    <p id="snombreError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="papellido" class="form-label">Primer apellido</label>
                                                 <input type="text" class="form-control" id="papellido"
                                                     name="papellido" required>
+                                                    <p id="papellidoError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="sapellido" class="form-label">Segundo apellido</label>
                                                 <input type="text" class="form-control" id="sapellido"
                                                     name="sapellido" required>
+                                                    <p id="sapellidoError"></p>
                                             </div>
 
                                             <div class="col-md-6">
                                                 <label for="correo" class="form-label">Correo Electrónico</label>
                                                 <input type="mail" class="form-control" id="correo" name="correo"
                                                     required>
+                                                    <p id="emailError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="telefono" class="form-label">Teléfono</label>
                                                 <input type="text" class="form-control" id="telefono"
                                                     name="telefono" required>
+                                                    <p id="telefonoError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="ciudad" class="form-label">Ciudad</label>
                                                 <input type="text" class="form-control" id="ciudad" name="ciudad"
                                                     required>
+                                                    <p id="ciudadError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="departamento" class="form-label">Departamento</label>
                                                 <input type="text" class="form-control" id="departamento"
                                                     name="MEdepartamento" required>
+                                                    <p id="dptoError"></p>
                                             </div>
 
                                             <div class="col-md-6">
                                                 <label for="idusuario" class="form-label">Usuario</label>
                                                 <input type="text" class="form-control" id="idusuario"
                                                     name="idusuario" required>
+                                                    <p id="idUsuarioError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="crearClave" class="form-label">Contraseña</label>
                                                 <input type="password" class="form-control" id="crearClave" name="crearClave"
                                                     required>
+                                                    <p id="passwordError"></p>
                                             </div>
                                             <button type="submit" class="boton-enviar" id="btnRegistro">Enviar</button> 
                                         </div>
                                     </form>
 
                                 </div>
+                                <div class="success-msg-container">
+                                    <h2 id="msg" class="msg">You have provided the correct details and your form will be processed</h2>
+                                  </div>
                             </div>
                         </div>
                     </div>
