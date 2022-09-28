@@ -27,13 +27,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a href="index.html#linkNosotros" class="nav-link scroll current">Nosotros</a>
+                    <a href="/frontapp/index.html#linknosotros" class="nav-link scroll current">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#linkContacto" class="nav-link scroll current">Contáctanos</a>
+                    <a href="/frontapp/index.html#linkContacto" class="nav-link scroll current">Contáctanos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#linkDonaciones" class="nav-link scroll current">Donaciones</a>
+                    <a href="/frontapp/index.html#linkDonaciones" class="nav-link scroll current">Donaciones</a>
                 </li>
                 <div class="figure-img d-none d-md-block">
                     <!-- d-none make and element dissapear-->
@@ -60,7 +60,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="index.html#linkPublicar">Proceso para publicar</a></li>
+                        <li><a class="dropdown-item" href="/frontapp/index.html#linkPublicar">Proceso para publicar</a></li>
                     </ul>
                 </li>
             </ul>
@@ -95,9 +95,15 @@
                                                 class="form-control form-control-lg" />
                                         </div>
 
+                                        <div class="alert">
+                                            <span class="closebtn"
+                                                onclick="this.parentElement.style.display='none';">&times;</span>
+                                            This is an alert box.
+                                        </div>
+
                                         <div class="pt-1 mb-4">
-                                            <button class="btn btn-dark btn-lg btn-block" type="button"
-                                                id="btnIngresar" onclick="login()">Ingresar</button>
+                                            <button class="btn btn-dark btn-lg btn-block" type="button" id="btnIngresar"
+                                                onclick="exitoso()">Ingresar</button>
                                         </div>
                                         <br>
                                         <p><a href="olvidoClave.html" id="inforegistro">Olvidé mi contraseña</a></p>
@@ -186,6 +192,7 @@
         crossorigin="anonymous"></script>
 
     <script src="public/js/App.js"> </script>
+    <script src="/frontapp/controlador/login.js"> </script>
 </body>
 
 </html>

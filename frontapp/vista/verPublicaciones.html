@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a href="index.html#linkNosotros" class="nav-link scroll current">Nosotros</a>
+                    <a href="/frontapp/index.html#linknosotros" class="nav-link scroll current">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#linkContacto" class="nav-link scroll current">Contáctanos</a>
+                    <a href="/frontapp/index.html#linkContacto" class="nav-link scroll current">Contáctanos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#linkDonaciones" class="nav-link scroll current">Donaciones</a>
+                    <a href="/frontapp/index.html#linkDonaciones" class="nav-link scroll current">Donaciones</a>
                 </li>
                 <div class="figure-img d-none d-md-block">
                     <!-- d-none make and element dissapear-->
@@ -59,7 +59,7 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="index.html#linkPublicar">Proceso para publicar</a></li>
+                        <li><a class="dropdown-item" href="/frontapp/index.html#linkPublicar">Proceso para publicar</a></li>
                     </ul>
                 </li>
             </ul>
@@ -115,24 +115,33 @@
 
                     <div class="col-md-3 publicacion">
                         <div class="card text-center flip-card">
-                            <img src="img/perrito.jpg" alt="imagen1" class="card-img-top">
+                            <img id="myImg" src="img/perrito.jpg" alt="imagen1" class="card-img-top imgpublication">
+
                             <div class="card-body bg-opacity-10 bg-black">
 
-                                <button title="Ampliar la imagen" id="zoomPubli" class="btnpublicacion"><img
-                                        src="img/lupa.png" class="card-footer iconosFoto"></a></button>
-
-                                <button title="Datos de la mascota" id="InformacionPubli" class="btnpublicacion"><img
+                                <button title="Datos de la mascota" id="btnInformacion" class="btnpublicacion"><img
                                         src="img/informacionPubli.png" class=" card-footer iconosFoto"></button>
 
-                                <button title="Contactar al Dueño" id="contactarPubli" class="btnpublicacion"><img
+                                <button title="Contactar al Dueño" id="btnContactar" class="btnpublicacion"><img
                                         src="img/correo.png" class=" card-footer iconosFoto "></button>
 
-                                <button title="Editar publicación" id="editarPubli" class="btnpublicacion"><img
+                                <button title="Editar publicación" id="btnEditar" class="btnpublicacion"><img
                                         src="img/editarPubli.png" class=" card-footer iconosFoto "></button>
 
-                                <button title="Eliminar publicación" id="eliminarPubli"
-                                    class="btnpublicacion"><span><img src="img/eliminarPubli.png"
-                                            class=" card-footer iconosFoto"></span></button>
+                                <button title="Eliminar publicación" id="btnEliminar" class="btnpublicacion"><span><img
+                                            src="img/eliminarPubli.png" class=" card-footer iconosFoto"></span></button>
+                            </div>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -140,26 +149,36 @@
                             <p class="card-text"></p>
                         </div>
                     </div>
+
                     <div class="col-md-3 publicacion">
                         <div class="card text-center flip-card">
-                            <img src="img/perrito.jpg" alt="imagen1" class="card-img-top">
-                            <div class="card-body bg-opacity-10 bg-black" >
+                            <img id="myImg" src="img/perrito.jpg" alt="imagen1" class="card-img-top imgpublication">
 
-                                <button title="Ampliar la imagen" id="zoomPubli" class="btnpublicacion"><img
-                                        src="img/lupa.png" class="card-footer iconosFoto"></a></button>
+                            <div class="card-body bg-opacity-10 bg-black">
 
-                                <button title="Datos de la mascota" id="InformacionPubli" class="btnpublicacion"><img
+                                <button title="Datos de la mascota" id="btnInformacion" class="btnpublicacion"><img
                                         src="img/informacionPubli.png" class=" card-footer iconosFoto"></button>
 
-                                <button title="Contactar al Dueño" id="contactarPubli" class="btnpublicacion"><img
+                                <button title="Contactar al Dueño" id="btnContactar" class="btnpublicacion"><img
                                         src="img/correo.png" class=" card-footer iconosFoto "></button>
 
-                                <button title="Editar publicación" id="editarPubli" class="btnpublicacion"><img
+                                <button title="Editar publicación" id="btnEditar" class="btnpublicacion"><img
                                         src="img/editarPubli.png" class=" card-footer iconosFoto "></button>
 
-                                <button title="Eliminar publicación" id="eliminarPubli"
-                                    class="btnpublicacion"><span><img src="img/eliminarPubli.png"
-                                            class=" card-footer iconosFoto"></span></button>
+                                <button title="Eliminar publicación" id="btnEliminar" class="btnpublicacion"><span><img
+                                            src="img/eliminarPubli.png" class=" card-footer iconosFoto"></span></button>
+                            </div>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -167,33 +186,46 @@
                             <p class="card-text"></p>
                         </div>
                     </div>
-                
-                <div class="col-md-3 publicacion">
-                    <div class="card text-center flip-card">
-                        <img src="img/perrito.jpg" alt="imagen1" class="card-img-top">
-                        <div class="card-body bg-opacity-10 bg-black">
 
-                            <button title="Ampliar la imagen" id="zoomPubli" class="btnpublicacion"><img
-                                    src="img/lupa.png" class="card-footer iconosFoto"></a></button>
+                                        <div class="col-md-3 publicacion">
+                        <div class="card text-center flip-card">
+                            <img id="myImg" src="img/perrito.jpg" alt="imagen1" class="card-img-top imgpublication">
 
-                            <button title="Datos de la mascota" id="InformacionPubli" class="btnpublicacion"><img
-                                    src="img/informacionPubli.png" class=" card-footer iconosFoto"></button>
+                            <div class="card-body bg-opacity-10 bg-black">
 
-                            <button title="Contactar al Dueño" id="contactarPubli" class="btnpublicacion"><img
-                                    src="img/correo.png" class=" card-footer iconosFoto "></button>
+                                <button title="Datos de la mascota" id="btnInformacion" class="btnpublicacion"><img
+                                        src="img/informacionPubli.png" class=" card-footer iconosFoto"></button>
 
-                            <button title="Editar publicación" id="editarPubli" class="btnpublicacion"><img
-                                    src="img/editarPubli.png" class=" card-footer iconosFoto "></button>
+                                <button title="Contactar al Dueño" id="btnContactar" class="btnpublicacion"><img
+                                        src="img/correo.png" class=" card-footer iconosFoto "></button>
 
-                            <button title="Eliminar publicación" id="eliminarPubli" class="btnpublicacion"><span><img
-                                        src="img/eliminarPubli.png" class=" card-footer iconosFoto"></span></button>
+                                <button title="Editar publicación" id="btnEditar" class="btnpublicacion"><img
+                                        src="img/editarPubli.png" class=" card-footer iconosFoto "></button>
+
+                                <button title="Eliminar publicación" id="btnEliminar" class="btnpublicacion"><span><img
+                                            src="img/eliminarPubli.png" class=" card-footer iconosFoto"></span></button>
+                            </div>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h4 class="card-title">NombreMascota</h4>
+                            <p class="card-text"></p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <h4 class="card-title">NombreMascota</h4>
-                        <p class="card-text"></p>
-                    </div>
+
                 </div>
+               
             </div>
 
         </div>
@@ -278,7 +310,9 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
 
+
     <script src="public/js/App.js"> </script>
+    <script src="/frontapp/controlador/verPublicaciones.js"> </script>
 </body>
 
 </html>
