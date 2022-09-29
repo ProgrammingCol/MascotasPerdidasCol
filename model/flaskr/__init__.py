@@ -18,3 +18,22 @@ def create_app(test_config=None):
     else:
         #carga configuracion de test si se pasa
         app.config.from_mapping(test_config)
+        
+    #asegura que la carpeta de instancia existe
+    try:
+        os.makedirs(app.instance_path)
+    except OSError:
+        pass
+    
+    #example page to hello world
+    @app.route('/')
+    def hello():
+        return 'hello! please select other endpoints.'
+    
+    from . import db
+    db.init_app(app)
+    
+    from . import auth
+    app.register_blueprint(auth.bp)
+    
+    return app
