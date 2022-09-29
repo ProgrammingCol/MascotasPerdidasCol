@@ -13,15 +13,15 @@ const msg = document.getElementById("msg");
 
 
 // Function to validate the email
-const validateEmail = (inputEmail)=> inputEmail.value.match(/^[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+$/);
+const validateEmail = (inputEmail)=> inputEmail.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);;
 // Function to validate password
-const validatePassword = (inputPassword) => inputPassword.value.match(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/);
+const validatePassword = (inputPassword)=> inputPassword.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 // Function to validate names
-const validateName = (inputName) => inputName.value.match(/^[a-zA-Z]{4,15}+$/);
+const validateName = (inputName)=> inputName.value.match(/^[a-zA-Z]{4,15}+$/);
 // Function to validate userId
-const validateUser = (inputUser) => inputUser.value.match(/^w{4,8}$/);
+const validateUser = (inputUser)=> inputUser.value.match(/^w{4,8}$/);
 // Function to validate phone
-const validatePhone = (inputPhone) => inputPhone.value.match(/^\\d{10}$/);
+const validatePhone = (inputPhone)=> inputPhone.value.match(/^\d{3}-\d{3}-\d{4}$/);
 
 
 
