@@ -61,8 +61,39 @@ button#btnRegistro:hover{
 }
 
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap");
 
 
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      135deg,
+      rgb(30, 250, 180),
+      rgb(180, 30, 250)
+    );
+  }
+  
+  .form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+  
+    background-color: white;
+    box-shadow: 0 0 10px rgba(30, 250, 180, 0.4);
+  }
+  
+  .title {
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+  }
 
 label {
     font-size: 15px;
@@ -89,7 +120,15 @@ label {
   }
   
   .error #emailError,
-  .error #passwordError {
+  .error #passwordError,
+  .error #pnombreError,
+  .error #snombreError,
+  .error #papellidoError,
+  .error #sapellidoError,
+  .error #telefonoError,
+  .error #ciudadError,
+  .error #dptoError,
+  .error #userError {
     color: red;
   }
   .error input {

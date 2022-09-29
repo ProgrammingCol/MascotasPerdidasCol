@@ -78,10 +78,10 @@
                                 <img src="img/RegistroUsuario.jpg" alt="login form" class="img-fluid"
                                     id="imgregistroUser">
                   </div>
-                  <div class=" col-md-6 col-lg-7 d-flex align-items-center">
-                                <div class="card-body p-4 p-lg-5 text-black">
+                  <div class=" col-md-6 col-lg-7 d-flex align-items-center ">
+                                <div class="card-body p-4 p-lg-5 text-black form-wrapper">
 
-                                    <form id="registroUser" name="RegForm" onsubmit="return validatefields()" method="post">
+                                    <form id="form" class="form">
                                         <!--DATOS DEL usuario-->
                                         <h3 id="titleFormUser">Formulario de registro</h3>
                                         <div class="row g-3">
@@ -117,8 +117,8 @@
                                                     <p id="emailError"></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="telefono" class="form-label">Teléfono</label>
-                                                <input type="text" class="form-control" id="telefono"
+                                                <label for="telefono" class="form-label">Celular</label>
+                                                <input type="tel" class="form-control" id="telefono"
                                                     name="telefono" required>
                                                     <p id="telefonoError"></p>
                                             </div>
@@ -129,21 +129,21 @@
                                                     <p id="ciudadError"></p>
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="departamento" class="form-label">Departamento</label>
-                                                <input type="text" class="form-control" id="departamento"
-                                                    name="MEdepartamento" required>
+                                                <label for="dpto" class="form-label">Departamento</label>
+                                                <input type="text" class="form-control" id="dpto"
+                                                    name="dpto" required>
                                                     <p id="dptoError"></p>
                                             </div>
 
                                             <div class="col-md-6">
-                                                <label for="idusuario" class="form-label">Usuario</label>
-                                                <input type="text" class="form-control" id="idusuario"
-                                                    name="idusuario" required>
-                                                    <p id="idUsuarioError"></p>
+                                                <label for="user" class="form-label">Usuario</label>
+                                                <input type="text" class="form-control" id="user"
+                                                    name="user" required>
+                                                    <p id="userError"></p>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="crearClave" class="form-label">Contraseña</label>
-                                                <input type="password" class="form-control" id="crearClave" name="crearClave"
+                                                <input type="password" class="form-control" id="crearClave" name="crearClave" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                                     required>
                                                     <p id="passwordError"></p>
                                             </div>

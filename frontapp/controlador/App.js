@@ -1,12 +1,4 @@
 
-document.addEventListener('DOMContentLoaded',()=>{
-
-    const MPpnombre = document.querySelector("#MPpnombre")
-    console.log(MPpnombre)
-})
-
-
-
 
 // ya funciona la conexion de input 1 creando una alerta con el contenido que este en esta.
 function boton1 (){

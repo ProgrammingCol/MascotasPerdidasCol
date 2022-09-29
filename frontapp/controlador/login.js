@@ -114,12 +114,12 @@ let attempt = 3;
 function validate() {
     var usuar = document.getElementById("loginEmail").value;
     var password = document.getElementById("loginpsw").value;
-    if (usuar == "Admin" && password == "Masc1234") {
+    if (usuar == "admin@gamil.com" && password == "Pa123456") {
         alert("Ingreso exitosamente");
         window.location = ".html";
         return false;
     }
-    if (usuar == "cliente" && password == "acceso") {
+    if (usuar == "cliente@hotmail.com" && password == "accesoCL1") {
         alert("Ingreso exitosamente");
         window.location = ".html";
         return false;
