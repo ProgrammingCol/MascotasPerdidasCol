@@ -85,7 +85,7 @@
                                         <!--DATOS DEL usuario-->
                                         <h3 id="titleFormUser">Formulario de registro</h3>
                                         <div class="row g-3">
-                                            <div class="col-6">
+                                            <div class="col-6" >
                                                 <label for="pnombre" class="form-label">Primer nombre</label>
                                                 <input type="text" class="form-control" id="pnombre" name="pnombre"
                                                     required>
@@ -112,11 +112,14 @@
 
                                             <div class="col-md-6">
                                                 <label for="correo" class="form-label">Correo Electrónico</label>
-                                                <input type="mail" class="form-control" id="correo" name="correo"
-                                                    required>
+                                                <input type="mail" class="form-control form-control-lg input" id="correo" name="correo"
+                                                    required oninput="checker()">
+                                                    <div id="icon"> </div>
+                                                    <p id="error-msg">Por favor ingrese un correo valido</p>
                                                     <p id="emailError"></p>
+                                                    
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 ">
                                                 <label for="telefono" class="form-label">Celular</label>
                                                 <input type="tel" class="form-control" id="telefono"
                                                     name="telefono" pattern="^\d{3}-\d{3}-\d{4}$" required>
@@ -152,12 +155,17 @@
                                     </form>
 
                                 </div>
-                                <div class="success-msg-container">
-                                    <h2 id="msg" class="msg">You have provided the correct details and your form will be processed</h2>
-                                  </div>
+
                             </div>
                         </div>
                     </div>
+                    <div id="message">
+                        <h4 id="titlealert"> La constraseña debe tener:</h4>
+                        <p id="letter" class="invalid">Al menos<b> una letra minúscula</b> </p>
+                        <p id="capital" class="invalid">Al menos<b> una letra mayúscula.</b> </p>
+                        <p id="number" class="invalid">Un<b> número</b></p>
+                        <p id="length" class="invalid">Mínimo <b>8 caracteres</b></p>
+                      </div>
                 </div>
             </div>
         </div>

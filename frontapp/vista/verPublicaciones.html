@@ -29,7 +29,7 @@
                     <a href="/frontapp/index.html#linknosotros" class="nav-link scroll current">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/frontapp/index.html#linkContacto" class="nav-link scroll current">Contáctanos</a>
+                    <a href="#datosContacto" class="nav-link scroll current">Contáctanos</a>
                 </li>
                 <li class="nav-item">
                     <a href="/frontapp/index.html#linkDonaciones" class="nav-link scroll current">Donaciones</a>
@@ -59,7 +59,8 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="/frontapp/index.html#linkPublicar">Proceso para publicar</a></li>
+                        <li><a class="dropdown-item" href="/frontapp/index.html#linkPublicar">Proceso para publicar</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -115,6 +116,48 @@
 
                     <div class="col-md-3 publicacion">
                         <div class="card text-center flip-card">
+                            <img id="myImg" src="img/perrito.jpg" alt="Contacto: 3107729052" class="card-img-top imgpublication">
+
+                            <div class="card-body bg-opacity-10 bg-black">
+
+                                <button title="ver más información" id="btnInformacion" class="btnpublicacion"><img s
+                                        src="img/informacionPubli.png" class=" card-footer iconosFoto" onclick="seeMore()"></button>
+
+                                <button title="Editar publicación" id="btnEditar" class="btnpublicacion"><img
+                                        src="img/editarPubli.png" class=" card-footer iconosFoto "onclick="editar()"></button>
+
+                                <button title="Eliminar publicación" id="btnEliminar" class="btnpublicacion"><span><img
+                                            src="img/eliminarPubli.png" class=" card-footer iconosFoto"onclick="eliminar()"></span></button>
+                            </div>
+                            <!-- The Modal to zoom image -->
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                            <div id="myDIV" class="moreInfo">
+                                <h6 class="title">Tarzan</h6>
+                                <p class="caracteristica">Raza: <span class="mascotaDatos" id="razaInfo">Labrador</span></p>
+                                <p class="caracteristica">Sexo: <span class="mascotaDatos" id="sexoInfo">Macho</span></p>
+                                <p class="caracteristica">Ciudad: <span class="mascotaDatos" id="ciudadInfo">Bogotá</span></p>
+                                <p class="caracteristica" id="parrafo">Especie<span class="mascotaDatos" id="especieInfo">Labrador</span></p>
+                            </div>
+                        </div>
+                        <!-- flip-card-back-->
+                        <div class="flip-card-back">
+                            <h4 class="card-title">NombreMascota</h4>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 publicacion">
+                        <div class="card text-center flip-card">
                             <img id="myImg" src="img/perrito.jpg" alt="imagen1" class="card-img-top imgpublication">
 
                             <div class="card-body bg-opacity-10 bg-black">
@@ -187,45 +230,8 @@
                         </div>
                     </div>
 
-                                        <div class="col-md-3 publicacion">
-                        <div class="card text-center flip-card">
-                            <img id="myImg" src="img/perrito.jpg" alt="imagen1" class="card-img-top imgpublication">
-
-                            <div class="card-body bg-opacity-10 bg-black">
-
-                                <button title="Datos de la mascota" id="btnInformacion" class="btnpublicacion"><img
-                                        src="img/informacionPubli.png" class=" card-footer iconosFoto"></button>
-
-                                <button title="Contactar al Dueño" id="btnContactar" class="btnpublicacion"><img
-                                        src="img/correo.png" class=" card-footer iconosFoto "></button>
-
-                                <button title="Editar publicación" id="btnEditar" class="btnpublicacion"><img
-                                        src="img/editarPubli.png" class=" card-footer iconosFoto "></button>
-
-                                <button title="Eliminar publicación" id="btnEliminar" class="btnpublicacion"><span><img
-                                            src="img/eliminarPubli.png" class=" card-footer iconosFoto"></span></button>
-                            </div>
-                            <!-- The Modal -->
-                            <div id="myModal" class="modal">
-
-                                <!-- The Close Button -->
-                                <span class="close">&times;</span>
-
-                                <!-- Modal Content (The Image) -->
-                                <img class="modal-content" id="img01">
-
-                                <!-- Modal Caption (Image Text) -->
-                                <div id="caption"></div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <h4 class="card-title">NombreMascota</h4>
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-
                 </div>
-               
+
             </div>
 
         </div>

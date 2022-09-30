@@ -1,3 +1,5 @@
+
+//CODIGO PARA EL ZOOM DE LA IMAGEN
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -18,3 +20,33 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
+
+
+//CODIGO PARA MOSTRAR INFORMACION
+function seeMore() {
+  let x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+//CODIGO PARA EDITAR INFORMACION
+//function editar() {}
+
+
+
+
+//CODIGO PARA ELIMINAR INFORMACION
+//function eliminar() {}
+
+
+
+
+
+//CODIGO PARA EL FILTRO
+

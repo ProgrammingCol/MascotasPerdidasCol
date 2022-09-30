@@ -69,6 +69,10 @@ button#btnFiltrar:hover {
 }
 
 
+
+/*flipcard*/
+
+
 .flip-card {
   position:relative;
   background-color: transparent;
@@ -89,10 +93,10 @@ button#btnFiltrar:hover {
 
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do an horizontal flip when you move the mouse over the flip box container 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-}
+}*/
 
 
 
@@ -234,4 +238,32 @@ button#btnFiltrar:hover {
   .modal-content {
     width: 100%;
   }
+}
+
+
+div.moreInfo{
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  background-color: #ffcccc;
+  
+}
+
+h6.title{
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+
+.moreInfo.caracteristica{
+  font-size: 18px;
+}
+
+.moreInfo.mascotaDatos{
+  font-size: 18px;
+}
+
+p#parrafo{
+  visibility: hidden;
 }
