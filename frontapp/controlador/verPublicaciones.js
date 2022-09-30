@@ -26,11 +26,26 @@ span.onclick = function() {
 
 //CODIGO PARA MOSTRAR INFORMACION
 function seeMore() {
-  let x = document.getElementById("myDIV");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  let publicacion1 = document.getElementById("myDIV");
+  let publicacion2 = document.getElementById("myDIV2");
+  let publicacion3 = document.getElementById("myDIV3");
+
+  if (publicacion1.style.display === "block") {
+    publicacion1.style.display = "none";
   } else {
-    x.style.display = "block";
+    publicacion1.style.display = "block";
+  }
+
+  if (publicacion2.style.display === "block") {
+    publicacion2.style.display = "none";
+  } else {
+    publicacion2.style.display = "block";
+  }
+
+  if (publicacion3.style.display === "block") {
+    publicacion3.style.display = "none";
+  } else {
+    publicacion3.style.display = "block";
   }
 }
 
