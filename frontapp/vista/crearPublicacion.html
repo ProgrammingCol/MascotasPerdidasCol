@@ -80,13 +80,12 @@
                             </div>
                             <div class=" col-md-6 col-lg-7 d-flex align-items-left">
                                 <div class="card-body p-4 p-lg-5 flex-wrap" >
-                                    <form method="get" action="" class="row class g-3">
+                                    <form method="get" action="" class="row class g-3" id="formPost"  name="formPost" onsubmit="return validateForm()">
                                         <h3 id="titleform1">Crear Publicación</h3>
                                         <!--DATOS DE LA MASCOTA-->
                                         <div class="col-sm-6">
                                             <label for="nombrem" class="form-label">Nombre de la Mascota</label>
-                                            <input type="text" class="form-control" id="nombrem" name="nombrem"
-                                                required>
+                                            <input type="text" class="form-control" id="nombrem" name="nombrem"required>
                                         </div>
                                         <div class="col-sm-6">
                                             <label for="especie" class="form-label" required>Especie</label>
@@ -118,7 +117,7 @@
                                         </div>
                                         <div class="col-sm-4">
                                             <label for="sexo" class="form-label" required>Estado</label>
-                                            <select name="sexo" id="estado" class="form-select">
+                                            <select name="estado" id="estado" class="form-select">
                                                 <option selected>seleccionar</option>
                                                 <option value="1">Perdida</option>
                                                 <option value="2">Encontrada</option>
@@ -127,8 +126,8 @@
                                         <div class="col-md-12">
                                             <label for="descripcion" class="form-label">Descripción</label>
                                             <textarea name="descripcion" id="descripcion" rows="3" class="form-control"
-                                                placeholder="Escriba las características de la mascota"
-                                                required></textarea>
+                                                placeholder="Escriba las características de la mascota" required></textarea>
+                                                <div id="msg"></div>
                                         </div>
                                         <div class="col-sm-12">
                                             <label class="form-label" style="text-align:center"><strong>Foto de la
