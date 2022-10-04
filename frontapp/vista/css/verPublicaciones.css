@@ -76,8 +76,8 @@ button#btnFiltrar:hover {
 .flip-card {
   position:relative;
   background-color: transparent;
-  width: 280px;
-  height: 200px;
+  width: auto;
+  height: auto;
   border: none;
   /* Remove this if you don't want the 3D effect */
 }
@@ -133,6 +133,10 @@ button#btnFiltrar:hover {
   margin-right: 30px;
 }
 
+.imgpublication{
+  width:"200px";
+  height: "320px";
+}
 
 .iconosFoto {
   width: 30px;
@@ -176,18 +180,21 @@ button#btnFiltrar:hover {
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 45px;
+  bottom: 45px;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: visible; /* Enable scroll if needed */
+  overflow: scroll; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  align-items: center;
 }
 
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
+  width: 35%;
+  height: 85%;
   max-width: 700px;
 }
 
@@ -201,6 +208,7 @@ button#btnFiltrar:hover {
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+  font-size: 25px;
 }
 
 /* Add Animation - Zoom in the Modal */

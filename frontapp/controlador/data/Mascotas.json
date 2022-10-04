@@ -1,0 +1,183 @@
+[
+    {
+        "id":"247937",
+        "nombreMascota": "Roko",
+        "especie": "Perro",
+        "raza": "Pastor alemán",
+        "sexo": "Macho",
+        "estadoMascota": "Perdida",
+        "descripcion":"Manchita negra en forma de corazon en la oreja derecha"
+    },
+    {
+        "id":"319975",
+        "nombreMascota": "Tali",
+        "especie": "Perro",
+        "raza": "Cocker spaniel",
+        "sexo": "Hembra",
+        "estadoMascota": "Encontrada",
+        "descripcion":"Le falta pelo en una de sus patas traseras debido a un accidente "
+    },
+    {
+        "id":"490908",
+        "nombreMascota": "Dexter",
+        "especie": "Perro",
+        "raza": "Beagle",
+        "sexo": "Macho",
+        "estadoMascota": "Perdida",
+        "descripcion":"ninguna"
+        
+    },
+    {
+        "id":"776078",
+        "nombreMascota": "Calipso",
+        "especie": "Perro",
+        "raza": "Clumber spaniel",
+        "sexo": "Hembra",
+        "estadoMascota": "Encontrada",
+        "descripcion":"el plaje de uno de sus  ojos es color negro y el otro color gris"
+    },
+    {
+        "id":"1242419",
+        "nombreMascota": "Bella",
+        "especie": "Perro",
+        "raza": "Chow chow",
+        "sexo": "hembra",
+        "estadoMascota": "Perdida",
+        "descripcion":"Perrita de tamaño grande, lengua morada, con una rayica color cafe oscuro encima de su nariz"
+    },
+    {
+        "id":"1313254",
+        "nombreMascota": "Duque",
+        "especie": "Perro",
+        "raza": "Shih tzu",
+        "sexo": "Macho",
+        "estadoMascota": "Encontrada",
+        "descripcion":"lleva una pañoleta verde"
+    },
+    {
+        "id":"2650132",
+        "nombreMascota": "Boby",
+        "especie": "Perro",
+        "raza": "Shiba Inu",
+        "sexo": "Macho",
+        "estadoMascota": "Perdida",
+        "descripcion":"perro grande, ojos rasgados, collar con su nombre"
+    },
+    {
+        "id":"2820134",
+        "nombreMascota": "Doki",
+        "especie": "Perro",
+        "raza": "Yorkshire",
+        "sexo": "Macho",
+        "estadoMascota": "Encontrada",
+        "descripcion":"ninguna"
+    },
+    {
+        "id":"3009441",
+        "nombreMascota": "Lulú",
+        "especie": "Perro",
+        "raza": "Basset hound",
+        "sexo": "Hembra",
+        "estadoMascota": "Perdida",
+        "descripcion":"lleva un chaleco lila con flores amarillas"
+    },
+    {
+        "id":"3361739",
+        "nombreMascota": "Canela",
+        "especie": "Perro",
+        "raza": "Dóberman",
+        "sexo": "Hembra",
+        "estadoMascota": "Encontrada",
+        "descripcion":"Tiene una marca arriba de su ojo derecho en forma de O"
+    },
+    {
+        "id":"g104827",
+        "nombreMascota": "Lilo",
+        "especie": "Gato",
+        "raza": "Persa",
+        "sexo": "Hembra",
+        "estadoMascota": "Perdida",
+        "descripcion":"lleva una pañoleta negra con su nombre"
+    },
+    {
+        "id":"g127028",
+        "nombreMascota": "Lucky",
+        "especie": "Gato",
+        "raza": "Himalayo",
+        "sexo": "Macho",
+        "estadoMascota": "Encontrada",
+        "descripcion":"Es blanco con ojos azules"
+    },
+    {
+        "id":"g208773",
+        "nombreMascota": "Fiona",
+        "especie": "Gato",
+        "raza": "Van turco",
+        "sexo": "Hembra",
+        "estadoMascota": "Perdida",
+        "descripcion":"cojea al caminar"
+    },
+    {
+        "id":"g691583",
+        "nombreMascota": "Copito",
+        "especie": "Gato",
+        "raza": "Snowshoe",
+        "sexo": "Macho",
+        "estadoMascota": "Encontrada",
+        "descripcion":"ninguna"
+    },
+    {
+        "id":"g747795",
+        "nombreMascota": "Kiara",
+        "especie": "Gato",
+        "raza": "Angora turco",
+        "sexo": "Hembra",
+        "estadoMascota": "Perdida",
+        "descripcion":"Pelo negro y tiene pelos canosos en la mandibula"
+    },
+    {
+        "id":"g991831",
+        "nombreMascota": "Zeus",
+        "especie": "Gato",
+        "raza": "Minskin",
+        "sexo": "Macho",
+        "estadoMascota": "Encontrada",
+        "descripcion":"Le falta su pata derecha"
+    },
+    {
+        "id":"g1170986",
+        "nombreMascota": "Mía",
+        "especie": "Gato",
+        "raza": "Highland fold",
+        "sexo": "Hembra",
+        "estadoMascota": "Perdida",
+        "descripcion":"la cola es de color negra con una mancha blanca al final"
+    },
+    {
+        "id":"g1521306",
+        "nombreMascota": "Doki",
+        "especie": "Gato",
+        "raza": "Bobtail americano",
+        "sexo": "Macho",
+        "estadoMascota": "Encontrada",
+        "descripcion":"lleva un collar rojo con un dije en forma de hueso"
+    },
+    {
+        "id":"g1687837",
+        "nombreMascota": "Phoenix",
+        "especie": "Gato",
+        "raza": "Skookum",
+        "sexo": "Hembra",
+        "estadoMascota": "Perdida",
+        "descripcion":"No puede ver"
+    },
+    {
+        "id":"g2071873",
+        "nombreMascota": "Chester",
+        "especie": "Gato",
+        "raza": "Toyger",
+        "sexo": "Macho",
+        "estadoMascota": "Encontrada",
+        "descripcion":"Manchita cafe arriba de la nariz"
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "primerNombre": "Yulieth",
+        "segundoNombre": "Vanessa",
+        "primerApellido": "Yopasa",
+        "segundoApellido": "Rodríguez",
+        "correoElectrónico": "vane@outlook.com",
+        "Celular": "3107729000",
+        "Ciudad": "Bogotá",
+        "Departamento": "Cundinamarca",
+        "usuario": "vanypr",
+        "contraseña":"Aa.123456"
+    },
+    {
+        "primerNombre": "Maria",
+        "segundoNombre": "del Pilar",
+        "primerApellido": "Cardozo",
+        "segundoApellido": "Ruiz",
+        "correoElectrónico": "mapi@gmail.com",
+        "Celular": "3157739200",
+        "Ciudad": "Ibagué",
+        "Departamento": "Tolima",
+        "usuario": "Mapi02",
+        "contraseña":"Mpr.5665"
+    },
+    {
+        "primerNombre": "Ana",
+        "segundoNombre": "Maria",
+        "primerApellido": "Sanchez",
+        "segundoApellido": "Poveda",
+        "correoElectrónico": "Anita45@hotmail.com",
+        "Celular": "3217729000",
+        "Ciudad": "Cali",
+        "Departamento": "Valle del cauca",
+        "usuario": "Anispek",
+        "contraseña":"Denb2563"
+    },
+    {
+        "primerNombre": "Christian",
+        "segundoNombre": "Camilo",
+        "primerApellido": "Puentes",
+        "segundoApellido": "Rocha",
+        "correoElectrónico": "chrisca@outlook.com",
+        "Celular": "3227729400",
+        "Ciudad": "Villavicencio",
+        "Departamento": "Meta",
+        "usuario": "camicp01",
+        "contraseña":"Aski26623"
+    },
+    {
+        "primerNombre": "David",
+        "segundoNombre": "Leonardo",
+        "primerApellido": "Lopez",
+        "segundoApellido": "Cristancho",
+        "correoElectrónico": "dlopez@gmail.com",
+        "Celular": "3227859200",
+        "Ciudad": "Bogotá",
+        "Departamento": "Cundinamarca",
+        "usuario": "Dlopez3",
+        "contraseña":"hercules50R"
+    },
+    {
+        "primerNombre": "Maira",
+        "segundoNombre": "Alejandra",
+        "primerApellido": "Santos",
+        "segundoApellido": "García",
+        "correoElectrónico": "Male56@hotmail.com",
+        "Celular": "3107728650",
+        "Ciudad": "Medellín",
+        "Departamento": "Antioquia",
+        "usuario": "Malesg15",
+        "contraseña":"Masg1626"
+    },
+    {
+        "primerNombre": "Juan",
+        "segundoNombre": "David",
+        "primerApellido": "Amador",
+        "segundoApellido": "cortes",
+        "correoElectrónico": "Juandamador@outlook.com",
+        "Celular": "3102548562",
+        "Ciudad": "Chía",
+        "Departamento": "Cundinamarca",
+        "usuario": "Dapizk1",
+        "contraseña":"Arko#125"
+    },
+    {
+        "primerNombre": "Francy",
+        "segundoNombre": "Milena",
+        "primerApellido": "Suarez",
+        "segundoApellido": "Daza",
+        "correoElectrónico": "franchismi@gmail.com",
+        "Celular": "3158569598",
+        "Ciudad": "Medellín",
+        "Departamento": "Antioquia",
+        "usuario": "fransu26",
+        "contraseña":"asdal3220"
+    }
+]
+    
