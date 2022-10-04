@@ -118,4 +118,45 @@ function seeMore() {
 
 
 
+//codigo para la peticion
+
+let data = null;
+
+fetch("/src/json/data.json").then(res => res.json()).then(res => {
+    data = res;
+    pintar(res);
+})
+
+const pintar = function (res){
+    const misiones = document.getElementById("misiones");
+
+    for(const value of res){
+        misiones.innerHTML += `<div class="active-brigade">
+        <a onclick="abrirModal(${value.idBrigada})" href="#openModal">
+            <img src="${value.imagen}">
+            <div class="active-brigade-padding">
+                <h1>${value.nombreBrigada").textContent = value.nombreBrigada;
+            document.getElementById("nombreOrganizacion").textContent = value.nombreOrganizacion;
+            document.getElementById("texto").textContent = value.texto;
+
+            const profesiones = document.getElementById("profesiones");
+            profesiones.innerHTML = null;
+            for (const i of value.profesiones){
+                const li = document.createElement('li');
+                li.textContent = i;
+                profesiones.appendChild(li);
+            }
+
+            const especialidades = document.getElementById("especialidades");
+            especialidades.innerHTML = null;
+            for (const i of value.especialidades){
+                const li = document.createElement('li');
+                li.textContent = i;
+                especialidades.appendChild(li);
+            }
+        }
+    }
+
+}
+
 
