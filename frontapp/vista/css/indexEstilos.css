@@ -104,7 +104,7 @@ header {
     position: relative; 
     background-color: #fcfcfc; 
     padding-top: 55px;
-    background-image: url('/vista/img/kitten-puppy-(1).jpg');
+    background-image: url('../img/kitten-puppy.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
