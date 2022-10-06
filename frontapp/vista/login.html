@@ -89,7 +89,7 @@
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
 
-                                    <form id="formlogin" method="POST" name="formlogin">
+                                    <form id="formlogin" method="POST" name="formlogin" onsubmit="peticion()">
                                         <h3 id="titleform2">INICIO DE SESIÓN</h3>
 
                                         <div class="form-outline mb-4">
@@ -108,7 +108,7 @@
                                         </div> 
 
                                         <div class="pt-1 mb-4">
-                                            <button class="btn btn-dark btn-lg btn-block" type="button" id="btnIngresar" onclick="validate()">Ingresar</button>
+                                            <button class="btn btn-dark btn-lg btn-block" type="submit" id="btnIngresar" onclick="validate()">Ingresar</button>
                                         </div>
                                         <br>
                                         <p><a href="olvidoClave.html" id="inforegistro">Olvidé mi contraseña</a></p>

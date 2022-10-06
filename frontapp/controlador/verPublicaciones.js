@@ -90,8 +90,8 @@ span.onclick = function() {
 
 
 //CODIGO PARA MOSTRAR INFORMACION
-function seeMore() {
-  let myDIV = document.getElementById("myDIV1");
+function seeMore(idElemento) {
+  let myDIV = document.getElementById(idElemento);
 
   if (myDIV.style.display === "block") {
     myDIV.style.display = "none";
