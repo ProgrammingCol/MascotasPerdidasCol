@@ -13,17 +13,9 @@ let posts = document.getElementById("posts");
 
 
 
-
-
-  let formValidation = () => {
-    if (descripcion.value === "") {
-        msg.innerHTML = "Post cannot be blank";
-        console.log("failure");
-    } else {
-        console.log("successs");
-        msg.innerHTML = "";
-        let data = {};
-        acceptData();
-    }
-};
+function crearPublicacion()
+{
+    alert('Hemos recibido tu publicación, gracias por confiar en nosotros. En unos minutos podrás ver la mascota publicada.');
+    location.href="../index.html";
+}
 

@@ -6,4 +6,9 @@
     alert(nombre_mascota,'hola');
 } */
 
+var usuarioLogged=false;
 
+function usuarioActivo(){
+
+    
+}

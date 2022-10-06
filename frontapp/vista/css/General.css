@@ -277,4 +277,24 @@ h1#textCabecera {
 	}
 
 }
+.ifMenu{
+	width: 100% !important;
+	height:70px !important;
+	
+}
 
+.publicacion-mascota{
+	margin: 0px 40px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    width: 20%;
+	height: auto;
+    text-align: left;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.publicacion-mascota-padding {
+    padding: 10px 20px;
+} 

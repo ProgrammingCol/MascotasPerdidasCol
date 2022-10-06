@@ -115,19 +115,20 @@ function validate() {
     var usuar = document.getElementById("loginEmail").value;
     var password = document.getElementById("loginpsw").value;
     if (usuar == "admin@gamil.com" && password == "Pa123456") {
-        alert("Ingreso exitosamente");
-        window.location = ".html";
-        return false;
+        alert("Ingreso exitososo");
+
+        window.location = "../index.html";
+        return 0;
     }
     if (usuar == "cliente@hotmail.com" && password == "accesoCL1") {
-        alert("Ingreso exitosamente");
-        window.location = ".html";
-        return false;
-
+        alert("Ingreso exitososo");
+        window.location = "../index.html?user=cliente";
+        return 0;
     } else {
         attempt--;
     }
-    alert(" Te queda " + attempt + " intentos mas ")
+    if(attempt>0){
+    alert(" Usuario o contraseña incorrecta. Te quedan " + attempt + " intentos mas ")}
     if (attempt <= 0) {
         alert('Espera 5 minutos para volver a intentarlo');
         document.getElementById("loginEmail").setAttribute('disabled', 'disabled');

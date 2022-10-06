@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,17 +17,15 @@
 
     <!--Navbar-->
     <nav id="navFixed" class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-10px">
-        <a class="navbar-brand " href="index.html"><small></small></a>
+        <a class="navbar-brand " href="../index.html"><small></small></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a href="../index.html#linknosotros" class="nav-link scroll current">Nosotros</a>
+                    <a href="../index.html#linknosotros" target="_top" class="nav-link scroll current">Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a href="#datosContacto" class="nav-link scroll current">Contáctanos</a>
@@ -37,18 +35,16 @@
                 </li>
                 <div class="figure-img d-none d-md-block">
                     <!-- d-none make and element dissapear-->
-                    <a class="figure-img" href="index.html">
+                    <a class="figure-img" href="../index.html">
                         <img src="img/logo.png" alt="" width="50" height="50" class=" align-items-center" id="logonav">
                     </a>
                 </div>
-
                 <li class="nav-item">
                     <a href="registroUsuario.html" class="nav-link scroll current">Registrarse</a>
                 </li>
                 <li class="nav-item">
                     <a href="login.html" class="nav-link scroll current">Login</a>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle nav-link scroll current" href="#" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,13 +56,21 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="../index.html#linkPublicar">Proceso para publicar</a></li>
+                        <li><a class="dropdown-item" href="index.html#linkPublicar">Proceso para publicar</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
     <!--Cuerpo-->
     <section id="sectionLogin">
         <div class="container py-5 h-100">
@@ -130,15 +134,15 @@
             <h3>Masc<span><img src="img/footprint.png" style="width: 25px"></span>ticas</h3>
 
             <p class="footer-links">
-                <a href="index.html" class="link-1">Inicio</a>
+                <a href="../index.html" class="link-1">Inicio</a>
 
-                <a href="index.html#linkNosotros">Nosotros</a>
+                <a href="../index.html#linkNosotros">Nosotros</a>
 
                 <a href="">Alianzas</a>
 
-                <a href="index.html#linkDonaciones">Donaciones</a>
+                <a href="../index.html#linkDonaciones">Donaciones</a>
 
-                <a href="index.html#linkPublicar">Proceso de publicación</a>
+                <a href="../index.html#linkPublicar">Proceso de publicación</a>
             </p>
             <p class="footer-company-name">Mascoticas © 2022
             </p>
@@ -195,7 +199,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
 
-    <script src="public/js/App.js"> </script>
+    <script src="../controlador/App.js"> </script>
     <script src="../controlador/login.js"> </script>
 </body>
 

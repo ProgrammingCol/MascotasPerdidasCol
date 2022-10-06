@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -38,35 +38,46 @@
                 </li>
                 <div class="figure-img d-none d-md-block">
                     <!-- d-none make and element dissapear-->
-                    <a class="figure-img" href="index.html">
+                    <a class="figure-img" href="../index.html">
                         <img src="img/logo.png" alt="" width="50" height="50" class=" align-items-center" id="logonav">
                     </a>
                 </div>
 
-                <li class="nav-item">
-                    <a href="registroUsuario.html" class="nav-link scroll current">Registrarse</a>
+                <li class="nav-item" id="menu-registrarse" >
+                    <a href="vista/registroUsuario.html" class="nav-link scroll current">Registrarse</a>
                 </li>
-                <li class="nav-item">
-                    <a href="login.html" class="nav-link scroll current">Login</a>
+                <li class="nav-item"  id="menu-login">
+                    <a href="vista/login.html" id="nombre-usuario" class="nav-link scroll current">Login</a>
                 </li>
 
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle nav-link scroll current" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-link scroll current" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Mascotas
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="verPublicaciones.html">Ver publicaciones</a></li>
-                        <li><a class="dropdown-item" href="../crearPublicacion.html">Crear publicación</a></li>
+                        <li><a class="dropdown-item" href="vista/verPublicaciones.html">Ver publicaciones</a></li>
+                        <li><a class="dropdown-item" href="vista/crearPublicacion.html">Crear publicación</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="index.html#linkPublicar">Proceso para publicar</a></li>
+                        <li><a class="dropdown-item" href="index.html#linkPublicacion">Proceso para publicar</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
+    <script>
+            if (usuarioLogged)
+            {
+                document.getElementById('menu-registrarse').style.display='none';
+                document.getElementById('nombre-usuario').textContent="Julio Cesar";
+                document.getElementById('nombre-usuario').href="";
+            }
+            
+            
+    </script>
 
     <!--formulario-->
     <section  id="sectionCrearP">
@@ -80,12 +91,12 @@
                             </div>
                             <div class=" col-md-6 col-lg-7 d-flex align-items-left">
                                 <div class="card-body p-4 p-lg-5 flex-wrap" >
-                                    <form method="get" action="" class="row class g-3" id="formPost"  name="formPost" onsubmit="return validateForm()">
+                                    <form class="row class g-3" id="formPost" onsubmit="crearPublicacion()">
                                         <h3 id="titleform1">Crear Publicación</h3>
                                         <!--DATOS DE LA MASCOTA-->
                                         <div class="col-sm-6">
                                             <label for="nombrem" class="form-label">Nombre de la Mascota</label>
-                                            <input type="text" class="form-control" id="nombrem" name="nombrem"required>
+                                            <input type="text" class="form-control" id="nombrem" name="nombrem" required>
                                         </div>
                                         <div class="col-sm-6">
                                             <label for="especie" class="form-label" required>Especie</label>
@@ -134,12 +145,11 @@
                                                     mascota</strong>
                                         </div>
                                         <div>
-                                            <form name="cargar-imagenes" type="POST" enctype="multipart/formdata"
-                                                style=" margin-bottom:25px">
+                                            
                                                 <input type="file" name="myfile" value="myfile" id="myfile" required />
-                                                <input type="submit" name="cargarimg" value="Cargar Imagen"
+                                                <input type="button" name="cargarimg" value="Cargar Imagen"
                                                     class="d-inline-block" id="cargarimg" /><br><br>
-                                            </form>
+
                                         </div>
 
                                         <div class="col-md-12">
@@ -150,8 +160,7 @@
                                         </div>
                                         <!--septima fila-->
                                         <div class="col-md-12">
-                                            <button type="submit" class="boton-enviar" id="btnCrearPubli"
-                                                onclick="boton1()">Enviar</button>
+                                            <button type="submit" class="boton-enviar" id="btnCrearPubli">Enviar</button>
                                         </div>
 
                                     </form>
@@ -173,15 +182,15 @@
             <h3>Masc<span><img src="img/footprint.png" style="width: 25px"></span>ticas</h3>
 
             <p class="footer-links">
-                <a href="index.html" class="link-1">Inicio</a>
+                <a href="../index.html" class="link-1">Inicio</a>
 
-                <a href="index.html#linkNosotros">Nosotros</a>
+                <a href="../index.html#linkNosotros">Nosotros</a>
 
                 <a href="">Alianzas</a>
 
-                <a href="index.html#linkDonaciones">Donaciones</a>
+                <a href="../index.html#linkDonaciones">Donaciones</a>
 
-                <a href="index.html#linkPublicar">Proceso de publicación</a>
+                <a href="../index.html#linkPublicar">Proceso de publicación</a>
 
             </p>
 
