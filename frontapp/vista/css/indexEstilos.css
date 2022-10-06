@@ -474,23 +474,11 @@ h1#textCabecera {
 }
 
 
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
-/* * {
-    font-family: Open Sans;
-} */
-
-/* section {
-    width: 100%;
-    display: inline-block;
-    background: #ee850e;
-    height: 50vh;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 700;
-    text-decoration: underline;
-} */
+* {
+  font-family: Open Sans;
+}
 
 .footer-distributed{
 	background: #fed7a9;
@@ -517,8 +505,15 @@ h1#textCabecera {
 
 /* The company logo */
 
-.imgLogo {
-    width: 100%;
+.footer-distributed h3{
+	color:  black;
+	font: normal 36px fantasy;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  black   ;
+    font: normal 36px fantasy;
 }
 
 /* Footer links */
@@ -532,7 +527,7 @@ h1#textCabecera {
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-    font-weight:400;
+  font-weight:400;
 	text-decoration: none;
 	color:  inherit;
 }
@@ -591,17 +586,17 @@ h1#textCabecera {
 }
 
 .footer-distributed .footer-links a:before {
-    content: "|";
-    font-weight:300;
-    font-size: 10px;
-    left: 0;
-    color: black;
-    display: inline-block;
-    padding-right: 5px;
+  content: "|";
+  font-weight:300;
+  font-size: 10px;
+  left: 0;
+  color: black;
+  display: inline-block;
+  padding-right: 5px;
 }
 
 .footer-distributed .footer-links .link-1:before {
-    content: none;
+  content: none;
 }
 
 /* Footer Right */
