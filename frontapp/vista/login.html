@@ -17,15 +17,17 @@
 
     <!--Navbar-->
     <nav id="navFixed" class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-10px">
-        <a class="navbar-brand " href="../index.html"><small></small></a>
+        <a class="navbar-brand " href="index.html"><small></small></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a href="../index.html#linknosotros" target="_top" class="nav-link scroll current">Nosotros</a>
+                    <a href="../index.html#linknosotros" class="nav-link scroll current">Nosotros</a>
                 </li>
                 <li class="nav-item">
                     <a href="#datosContacto" class="nav-link scroll current">Contáctanos</a>
@@ -39,15 +41,17 @@
                         <img src="img/logo.png" alt="" width="50" height="50" class=" align-items-center" id="logonav">
                     </a>
                 </div>
+
                 <li class="nav-item">
                     <a href="registroUsuario.html" class="nav-link scroll current">Registrarse</a>
                 </li>
                 <li class="nav-item">
                     <a href="login.html" class="nav-link scroll current">Login</a>
                 </li>
+
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle nav-link scroll current" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle nav-link scroll current" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Mascotas
                     </a>
                     <ul class="dropdown-menu">
@@ -56,12 +60,13 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="index.html#linkPublicar">Proceso para publicar</a></li>
+                        <li><a class="dropdown-item" href="../index.html#linkPublicar">Proceso para publicar</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </nav>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -84,7 +89,7 @@
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
 
-                                    <form id="formlogin" method="POST" name="formlogin">
+                                    <form id="formlogin" method="POST" name="formlogin" onsubmit="peticion()">
                                         <h3 id="titleform2">INICIO DE SESIÓN</h3>
 
                                         <div class="form-outline mb-4">
@@ -103,7 +108,7 @@
                                         </div> 
 
                                         <div class="pt-1 mb-4">
-                                            <button class="btn btn-dark btn-lg btn-block" type="button" id="btnIngresar" onclick="validate()">Ingresar</button>
+                                            <button class="btn btn-dark btn-lg btn-block" type="submit" id="btnIngresar" onclick="validate()">Ingresar</button>
                                         </div>
                                         <br>
                                         <p><a href="olvidoClave.html" id="inforegistro">Olvidé mi contraseña</a></p>
@@ -195,10 +200,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
 
+        
+    <script src="public/js/App.js"> </script>
     <script src="../controlador/App.js"> </script>
     <script src="../controlador/login.js"> </script>
 </body>

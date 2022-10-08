@@ -104,6 +104,17 @@ function checker(){
 
 }
 
+function peticion(){
+    
+    var usuar = document.getElementById("loginEmail").value;
+    var password = document.getElementById("loginpsw").value;
+    var datos={"correo":usuar,"password":password};
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("POST",'127.0.0.1:5000/api/v1/auth/login',true);
+    xhttp.send(JSON.stringify({data}));
+    alert(xhttp.responseText);
+
+}
 
 
 

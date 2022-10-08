@@ -90,6 +90,8 @@
                                 <label for="filtroRaza" class="form-label">Raza</label>
                                 <select name="filtroRaza" id="filtroRaza" class="form-select">
                                     <option selected>seleccionar</option>
+                                    <option value="1">Perro</option>
+                                    <option value="2">Gato</option>
                                 </select>
                             </li>
                             <li>
@@ -114,50 +116,56 @@
                 </form>
             </div>
 
-            <div class="col-md-9">
-                <div class="row card-group" style="height:auto !important;">
-                    <div class="publicacion-mascota">
-                        <img src="../controlador/Assets/1242419.jpg" height="65%"  class="card-img-top imgpublication" style="margin-top: 5% !important;">
-                        <div class="publicacion-mascota-padding">
-                            <h2 style="text-align: center;">Tarzan</h2>
-                            <h4 style="text-align: center;">Criollo</h4>
-                            <h4 style="text-align: center;">Perdido</h4>
-                        </div>
-                    </div>
-                    <div class="publicacion-mascota" >
-                        <img src="../controlador/Assets/1313254.jpg" height="65%"  class="card-img-top imgpublication" style="margin-top: 5% !important;">
-                        <div class="publicacion-mascota-padding">
-                            <h2 style="text-align: center;">Taco</h2>
-                            <h4 style="text-align: center;">Schanauzer</h4>
-                            <h4 style="text-align: center;">Encontrado</h4>
-                        </div>
-                    </div>
-
-                    <div class="publicacion-mascota">
-                        <img src="../controlador/Assets/g127028.jpg" height="65%" class="card-img-top imgpublication"style="margin-top: 5% !important;">
-                        <div class="publicacion-mascota-padding">
-                            <h2 style="text-align: center;">Miau</h2>
-                            <h4 style="text-align: center;">Nebelung</h4>
-                            <h4 style="text-align: center;">Encontrado</h4>
-                        </div>
-                    </div>                  
-
-
-                </div>
-
-            </div>
             <!--Seccion de publicaiones-->
 
-            <!--<div class="col-md-9">
+            <div class="col-md-9">
                 <div class="row card-group">
 
-                    <div class="col-md-3 publicacion" id="mascotasContainer">
+                    <div class="col-md-3 publicacion" id="mascotasContainer1">
                         <div class="card text-center flip-card">
-                            <img id="myImg" src="../controlador/Assets/1242419.jpg" alt="Contacto: 3107729052" class="card-img-top imgpublication">
+                            <img id="myImg1" src="../controlador/Assets/247937.jpg" alt="Contacto: 3107729052" class="card-img-top imgpublication">
 
                             <div class="card-body bg-opacity-10 bg-black">
 
-                                <button title="ver más información" id="btnInformacion" class="btnpublicacion" onclick="seeMore()"><img
+                                <button title="ver más información" id="btnInformacion" class="btnpublicacion" onclick="seeMore('myDIV0')"><img
+                                        src="img/informacionPubli.png" class=" card-footer iconosFoto" ></button>
+
+                                <button title="Editar publicación" id="btnEditar" class="btnpublicacion"onClick="editPost(this)" ><img
+                                        src="img/editarPubli.png" class=" card-footer iconosFoto " ></button>
+
+                                <button title="Eliminar publicación" id="btnEliminar" class="btnpublicacion" onClick="deletePost(this)"><span><img
+                                            src="img/eliminarPubli.png" class=" card-footer iconosFoto" ></span></button>
+                            </div>
+                            <!-- The Modal to zoom image -->
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                            <div id="myDIV0" class="moreInfo">
+                                <h6 class="title">Tarzan</h6>
+                                <p class="caracteristica">Raza: <span class="mascotaDatos" id="razaInfo">Labrador</span></p>
+                                <p class="caracteristica">Sexo: <span class="mascotaDatos" id="sexoInfo">Macho</span></p>
+                                <p class="caracteristica">Estado: <span class="mascotaDatos" id="ciudadInfo">Perdida</span></p>
+                                <p class="caracteristica" id="parrafo">Especie<span class="mascotaDatos" id="especieInfo">Labrador</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 publicacion" id="mascotasContainer1">
+                        <div class="card text-center flip-card">
+                            <img id="myImg1" src="../controlador/Assets/1242419.jpg" alt="Contacto: 3107729052" class="card-img-top imgpublication">
+
+                            <div class="card-body bg-opacity-10 bg-black">
+
+                                <button title="ver más información" id="btnInformacion" class="btnpublicacion" onclick="seeMore('myDIV1')"><img
                                         src="img/informacionPubli.png" class=" card-footer iconosFoto" ></button>
 
                                 <button title="Editar publicación" id="btnEditar" class="btnpublicacion"onClick="editPost(this)" ><img
@@ -185,6 +193,45 @@
                                 <p class="caracteristica">Estado: <span class="mascotaDatos" id="ciudadInfo">Perdida</span></p>
                                 <p class="caracteristica" id="parrafo">Especie<span class="mascotaDatos" id="especieInfo">Labrador</span></p>
                             </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 publicacion" id="mascotasContainer2">
+                        <div class="card text-center flip-card">
+                            <img id="myImg" src="../controlador/Assets/1242419.jpg" alt="Contacto: 3107729052" class="card-img-top imgpublication">
+
+                            <div class="card-body bg-opacity-10 bg-black">
+
+                                <button title="ver más información" id="btnInformacion" class="btnpublicacion" onclick="seeMore('myDIV2')"><img
+                                        src="img/informacionPubli.png" class=" card-footer iconosFoto" ></button>
+
+                                <button title="Editar publicación" id="btnEditar" class="btnpublicacion"onClick="editPost(this)" ><img
+                                        src="img/editarPubli.png" class=" card-footer iconosFoto " ></button>
+
+                                <button title="Eliminar publicación" id="btnEliminar" class="btnpublicacion" onClick="deletePost(this)"><span><img
+                                            src="img/eliminarPubli.png" class=" card-footer iconosFoto" ></span></button>
+                            </div>
+                            <!-- The Modal to zoom image -->
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                            <div id="myDIV2" class="moreInfo">
+                                <h6 class="title">Tarzan</h6>
+                                <p class="caracteristica">Raza: <span class="mascotaDatos" id="razaInfo">Labrador</span></p>
+                                <p class="caracteristica">Sexo: <span class="mascotaDatos" id="sexoInfo">Macho</span></p>
+                                <p class="caracteristica">Estado: <span class="mascotaDatos" id="ciudadInfo">Perdida</span></p>
+                                <p class="caracteristica" id="parrafo">Especie<span class="mascotaDatos" id="especieInfo">Labrador</span></p>
+                            </div>
+
                         </div>
                     </div>
                     
@@ -192,7 +239,7 @@
 
                 </div>
 
-            </div>-->
+            </div>
 
         </div>
     </section>
